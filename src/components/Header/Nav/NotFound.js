@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Shop() {
+function NotFound() {
   return (
     <div>
-      hello shop
+      NOT FOUND
     </div>
   )
 }
 
-export default Shop
+export default NotFound
