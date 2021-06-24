@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Shop() {
+function Home() {
   return (
     <div>
-      hello shop
+      HOME PAGE
     </div>
   )
 }
 
-export default Shop
+export default Home
