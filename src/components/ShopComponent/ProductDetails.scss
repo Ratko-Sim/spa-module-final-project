@@ -1,0 +1,176 @@
+// .card-details{
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 1rem;
+// text-align: center;
+//   width: 18rem;
+//   padding: 1rem;
+//   margin: 0 auto;
+
+
+  
+//   .card-image-details-box{
+//     width: 18rem;
+//     height: 15rem;
+
+  
+   
+//   }
+
+
+
+//   .card-image-details-box img{
+//     width: 100%;
+    
+
+  
+   
+//   }
+
+
+//   .card-category-details{
+//     margin-top: 20rem;
+//     border: 1px solid black;
+//   }
+  
+
+// }
+
+
+
+
+
+
+
+
+
+.card-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  margin: 1rem;
+  //border: 1px solid red;
+  width: 18rem;
+  height: 90vh;
+  padding: .1rem;
+  position: relative;
+  
+  border-radius: 20px;
+  overflow: hidden;
+
+  // .card:hover{
+    
+  // }
+
+  // .card::after{
+  //   content: 'ARHERA';
+  //   position: absolute;
+  //   top: 30%;
+  //   left: -20%;
+  //   font-weight: 800;
+  //   font-size: 12rem;
+  //   font-weight: 800;
+  //   font-style: italic;
+  //   color: gray;
+  // }
+
+
+  .card-image-details-box{
+    margin: 0 auto;
+    width: 10rem;
+    height: 3rem;
+    z-index: 10000;
+    transition: 0.5s;
+    margin-bottom: 5rem;
+
+  }
+
+  .card-image-details-box:hover{
+   
+   transform: scale(1.5);
+
+  }
+
+  .card-image-details-box img{
+   
+    width: 100%;
+    height: 150px;
+    
+  }
+
+
+  .card-product-color-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+   
+
+  }
+
+  .card-product-color-details span{
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .card-product-color-details span:nth-child(1){
+    background-color: red;
+  }
+
+  .card-product-color-details span:nth-child(2){
+    background-color:yellow;
+  }
+
+  .card-product-color-details span:nth-child(3){
+    background-color: green;
+  }
+
+
+  .card-content-details{
+    width: 90%;
+    min-height: 10vh;
+    margin: 0 auto;
+    // border: 1px red solid;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;    
+    flex-wrap: wrap;
+    
+  
+  }
+
+  .card .card-content-details:hover{
+  
+  }
+
+ .card-link-details{
+   height: .1rem;
+   padding: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: black;
+   color: whitesmoke;
+   border-radius: 4px;
+   text-decoration: none;
+   font-weight: 100;
+   margin: 1rem auto;
+ }
+
+ .card_link-details span {
+   display: block;
+ }
+
+
+}
+
+
+
