@@ -6,7 +6,7 @@
   .Logo-wrapper {
     display: flex;
     flex-direction: column;
-    width: 4rem;
+    width: 6rem;
     margin-top: 2rem;
 
     .Logo-icon {
@@ -17,17 +17,19 @@
     
     .Logo-name {
       text-align: center;
-      font-size: .9rem;
+      font-size: 1.2rem;
       text-transform: uppercase;
       font-weight: 600;
+    
     }
   }
 
   .Top-right-wrapper {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    max-width: 60rem;
+    width: 80%;
+    max-width: 35rem;
+    margin-left: 2rem;
 
     .Login {
       text-align: right;

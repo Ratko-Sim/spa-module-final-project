@@ -13,6 +13,7 @@ function App() {
       <Router>
         <Header />
         <Switch>
+          <Route path="/" exact component={Home} />
           <Route path="/home" exact component={Home} />
           <Route path="/shop" exact component={Shop} />
           <Route path="/notfound" exact component={NotFound} />
