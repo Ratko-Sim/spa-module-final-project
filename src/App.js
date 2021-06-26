@@ -7,7 +7,8 @@ import Home from "./components/Home/Home"
 import { ProductListing } from './components/ShopComponent/ProductListing';
 import { ProductDetails } from './components/ShopComponent/ProductDetails';
 import ReviewsPage from "./components/Home/ReviewsComponent/ReviewsPage/ReviewsPage"
-import { motion, AnimatePresence } from "framer-motion"
+import { AnimatePresence } from "framer-motion"
+import Footer from "./components/Footer/Footer"
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/reviews" exact component={ReviewsPage} />
           </Switch>
         </AnimatePresence>
+        <Footer />
       </Router>
     </div>
   );
