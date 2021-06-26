@@ -1,27 +1,20 @@
 import { ActionTypes } from "../action-types/actionTypes";
+
 export const setProducts = (products) => {
   return {
-    type: ActionTypes.set_products,
+    type: ActionTypes.SET_PRODUCTS,
     payload: products,
   };
 };
 
-
-export const selectedProducts = (products) => {
+export const selectedProducts = (product) => {
   return {
-    type: ActionTypes.selected_products,
-    payload: products,
+    type: ActionTypes.SELECTED_PRODUCT,
+    payload: product,
   };
 };
-
-
-
-export const removeSelectedProducts = (products) => {
+export const removeSelectedProducts = () => {
   return {
-    type: ActionTypes.remove_selected_product,
-    payload: products,
+    type: ActionTypes.REMOVE_SELECTED_PRODUCT,
   };
 };
-
-
-

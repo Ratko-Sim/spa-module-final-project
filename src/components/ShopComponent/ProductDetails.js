@@ -17,7 +17,6 @@ export const ProductDetails = () => {
       .catch(err => {
         console.log('Err', err)
       })
-    console.log(response.data)
     dispatch(selectedProducts(response.data))
   };
   useEffect(() => {
@@ -25,7 +24,6 @@ export const ProductDetails = () => {
     return () => {
       dispatch(removeSelectedProducts());
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productId])
   return (
     <div>

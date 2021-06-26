@@ -9,8 +9,8 @@ export const ProductComponent = () => {
 
     const { id, title, image, price } = products;
     return (
-      <div className="Card">
-        <Link to={`/product/${id}`} key={id} >
+      <div className="Card" key={id}>
+        <Link to={`/product/${id}`}  >
           <div className="card-image"><img src={image} alt={title} /></div>
           <div className="card-title">{title}</div>
           <div>

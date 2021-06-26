@@ -15,8 +15,6 @@ export const ProductListing = () => {
       .catch(err => {
         console.error(err);
       });
-
-    console.log(response)
     dispatch(setProducts(response.data));
   };
 
@@ -24,7 +22,6 @@ export const ProductListing = () => {
     fetchProducts();
   }, []);
 
-  console.log("Products: ", products)
   return (
     <div className="Products-Container">
       <ProductComponent />
