@@ -12,7 +12,7 @@ function Nav() {
           </NavLink>
         </li>
         <li className="Nav-item">
-          <NavLink activeClassName='Active-page' to='/shop'>
+          <NavLink activeClassName='Active-page' to='/productlisting'>
             shop
           </NavLink>
         </li>

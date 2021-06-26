@@ -1,10 +1,11 @@
 import './App.scss';
 import React from 'react'
-import Header from "./components/Header/Header"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Header from "./components/Header/Header"
 import NotFound from "./components/Header/Nav/NotFound"
-import Shop from "./components/ShopComponent/Shop"
 import Home from "./components/Home/Home"
+import { ProductListing } from './components/ShopComponent/ProductListing';
+import { ProductDetails } from './components/ShopComponent/ProductDetails';
 
 function App() {
 
@@ -15,13 +16,13 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/home" exact component={Home} />
-          <Route path="/shop" exact component={Shop} />
+          <Route path="/productlisting" exact component={ProductListing} />
+          <Route path="/product/:productId" exact component={ProductDetails} />
           <Route path="/notfound" exact component={NotFound} />
         </Switch>
       </Router>
     </div>
   );
 }
-
 
 export default App;
