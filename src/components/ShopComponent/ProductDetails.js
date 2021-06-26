@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectedProducts, removeSelectedProducts } from '../../Redux/actions/productActions';
 import "./ProductDetails.scss";
 import paypal from "./paypal.png"
+import spin from "./Spinner-3.gif"
 
 export const ProductDetails = () => {
   const product = useSelector((state) => state.product)
@@ -29,7 +30,7 @@ export const ProductDetails = () => {
     <div>
       {
         Object.keys(product).length === 0 ? (
-          <div>...Loading</div>
+          <div className="Details-spinner"><img src={spin} alt="Loading spinner" /></div>
         ) : (
           <>
             <div className="Details-wrapper">
