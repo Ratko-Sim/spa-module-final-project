@@ -7,6 +7,7 @@ import Home from "./components/Home/Home"
 import { ProductListing } from './components/ShopComponent/ProductListing';
 import { ProductDetails } from './components/ShopComponent/ProductDetails';
 import ReviewsPage from "./components/Home/ReviewsComponent/ReviewsPage/ReviewsPage"
+import { motion, AnimatePresence } from "framer-motion"
 
 function App() {
 
@@ -14,14 +15,16 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/home" exact component={Home} />
-          <Route path="/productlisting" exact component={ProductListing} />
-          <Route path="/product/:productId" exact component={ProductDetails} />
-          <Route path="/notfound" exact component={NotFound} />
-          <Route path="/reviews" exact component={ReviewsPage} />
-        </Switch>
+        <AnimatePresence>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/home" exact component={Home} />
+            <Route path="/productlisting" exact component={ProductListing} />
+            <Route path="/product/:productId" exact component={ProductDetails} />
+            <Route path="/notfound" exact component={NotFound} />
+            <Route path="/reviews" exact component={ReviewsPage} />
+          </Switch>
+        </AnimatePresence>
       </Router>
     </div>
   );

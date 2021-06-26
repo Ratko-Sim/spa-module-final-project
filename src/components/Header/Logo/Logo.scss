@@ -12,15 +12,18 @@
     .Logo-icon {
       width: 100%;
       object-position: center;
-
     }
     
     .Logo-name {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.35rem;
       text-transform: uppercase;
       font-weight: 600;
-    
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
     }
   }
 

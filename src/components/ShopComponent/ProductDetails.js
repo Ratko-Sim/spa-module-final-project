@@ -6,6 +6,8 @@ import { selectedProducts, removeSelectedProducts } from '../../Redux/actions/pr
 import "./ProductDetails.scss";
 import paypal from "./paypal.png"
 import spin from "./Spinner-3.gif"
+import { motion } from "framer-motion"
+
 
 export const ProductDetails = () => {
   const product = useSelector((state) => state.product)
@@ -20,6 +22,7 @@ export const ProductDetails = () => {
       })
     dispatch(selectedProducts(response.data))
   };
+
   useEffect(() => {
     if (productId && productId !== "") fetchProductDetails();
     return () => {
@@ -33,7 +36,10 @@ export const ProductDetails = () => {
           <div className="Details-spinner"><img src={spin} alt="Loading spinner" /></div>
         ) : (
           <>
-            <div className="Details-wrapper">
+            <motion.div
+              exit={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }} className="Details-wrapper">
               <div className="Details-image">
                 <img src={image} alt={title} />
               </div>
@@ -47,7 +53,7 @@ export const ProductDetails = () => {
                   <img src={paypal} alt="paypal" />
                 </div>
               </div>
-            </div>
+            </motion.div>
           </>
         )
       }

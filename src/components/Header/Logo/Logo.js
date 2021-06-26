@@ -9,8 +9,10 @@ function Logo() {
   return (
     <div className="Top-wrapper">
       <div className="Logo-wrapper">
-        <img className="Logo-icon" src={arheraIcon} alt="" />
-        <span className="Logo-name">arhera</span>
+        <a href="/">
+          <img className="Logo-icon" src={arheraIcon} alt="" />
+          <span className="Logo-name">arhera</span>
+        </a>
       </div>
       <div className="Top-right-wrapper">
         <div className="Login">
