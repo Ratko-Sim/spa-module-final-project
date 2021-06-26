@@ -8,3 +8,7 @@ export const SpinnerType = {
   SHOW_SPINNER: "SHOW_SPINNER",
   SHOW_PRODUCTS: "SHOW_PRODUCTS"
 }
+export const SidebarType = {
+  SHOW_SIDEBAR: "SHOW_SIDEBAR",
+  HIDE_SIDEBAR: "HIDE_SIDEBAR"
+}
