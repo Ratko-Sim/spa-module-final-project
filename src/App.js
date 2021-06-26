@@ -6,6 +6,7 @@ import NotFound from "./components/Header/Nav/NotFound"
 import Home from "./components/Home/Home"
 import { ProductListing } from './components/ShopComponent/ProductListing';
 import { ProductDetails } from './components/ShopComponent/ProductDetails';
+import ReviewsPage from "./components/Home/ReviewsComponent/ReviewsPage/ReviewsPage"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/productlisting" exact component={ProductListing} />
           <Route path="/product/:productId" exact component={ProductDetails} />
           <Route path="/notfound" exact component={NotFound} />
+          <Route path="/reviews" exact component={ReviewsPage} />
         </Switch>
       </Router>
     </div>
