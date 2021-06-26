@@ -15,7 +15,6 @@ export const ProductComponent = () => {
           <div className="card-title">{title}</div>
           <div>
             <div className="card-price">{price} €</div>
-            <button>Add to cart</button>
           </div>
         </Link>
       </div>
