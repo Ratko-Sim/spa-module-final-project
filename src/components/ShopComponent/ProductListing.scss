@@ -1,4 +1,14 @@
 .Products-Container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  margin: 10rem auto;
+  justify-content: center;
+  justify-content: space-between;
+  
+  @media only screen and (max-width: 690px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

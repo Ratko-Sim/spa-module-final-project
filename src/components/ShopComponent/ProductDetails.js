@@ -4,13 +4,13 @@ import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectedProducts, removeSelectedProducts } from '../../Redux/actions/productActions';
 import "./ProductDetails.scss";
+import paypal from "./paypal.png"
 
 export const ProductDetails = () => {
   const product = useSelector((state) => state.product)
-  const { image, title, price, category, description } = product;
+  const { image, title, price, description } = product;
   const { productId } = useParams();
   const dispatch = useDispatch();
-  console.log(productId)
 
   const fetchProductDetails = async () => {
     const response = await axios.get(`https://fakestoreapi.com/products/${productId}`)
@@ -34,31 +34,21 @@ export const ProductDetails = () => {
           <div>...Loading</div>
         ) : (
           <>
-
-            <div className="card-details">
-              <div className="card-image-details-box">
+            <div className="Details-wrapper">
+              <div className="Details-image">
                 <img src={image} alt={title} />
               </div>
-              <div className="card-product-color-details">
-                <span></span>
-                <span></span>
-                <span></span>
+              <div className="Details-content-wrapper">
+                <div className="Details-title">{title}</div>
+                <div className="Details-price">{price} €</div>
+                <div className="Details-description">{description}</div>
+                <button className="Details-button">Add to Cart</button>
+                <div className="Details-buyNow">
+                  <div>Buy now with</div>
+                  <img src={paypal} alt="paypal" />
+                </div>
               </div>
-
-
-              <div className="card-content-details">
-                <div className="card-category-details">{category}</div>
-                <div className="card-title-details"><h4>{title}</h4></div>
-                <div className="card-price-details"><h2>{price} €</h2></div>
-                <div className="card-description-details">{description}</div>
-              </div>
-
-              <button className="card-link-details">Ad to Cart</button>
-
             </div>
-
-
-
           </>
         )
       }
