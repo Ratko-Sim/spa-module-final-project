@@ -29,8 +29,12 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+    }
 
     img {
+      min-width: 20rem;
       width: 60%;
       object-position: 50% 50%;
     }
@@ -67,7 +71,6 @@ img{
       width: 100%;
       text-align: center;
       height: 2.3rem;
-      border-radius: .7rem;
       margin-top: .3rem;
       border: none;
       font-size: .9rem;

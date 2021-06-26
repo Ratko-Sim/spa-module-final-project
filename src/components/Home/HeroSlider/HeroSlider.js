@@ -18,10 +18,16 @@ function HeroSlider() {
         </div>
         <div className="each-slide">
           <div className="slide-2">
+            <p>the coolest styles are here</p>
+            <span>50% OFF</span>
+            <button>explore</button>
           </div>
         </div>
         <div className="each-slide">
           <div className="slide-3">
+            <p>the coolest styles are here</p>
+            <span>50% OFF</span>
+            <button>explore</button>
           </div>
         </div>
       </Slide>
