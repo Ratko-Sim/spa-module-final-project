@@ -1,56 +1,14 @@
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-  //border: 1px solid red;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
-}
-
-.Card-Container{
-  
-}
-
-
-
 .card{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
   margin: 1rem;
-  //border: 1px solid red;
   width: 14rem;
   height: 60vh;
   padding: .1rem;
   position: relative;
-  
   border-radius: 20px;
   overflow: hidden;
-
-  // .card:hover{
-    
-  // }
-
-  // .card::after{
-  //   content: 'ARHERA';
-  //   position: absolute;
-  //   top: 30%;
-  //   left: -20%;
-  //   font-weight: 800;
-  //   font-size: 12rem;
-  //   font-weight: 800;
-  //   font-style: italic;
-  //   color: gray;
-  // }
-
 
   .card-image{
     margin: 0 auto;
@@ -59,19 +17,15 @@ body {
     z-index: 10000;
     transition: 0.5s;
     margin-bottom: 5rem;
-
   }
 
   .card-image:hover{
    margin-top: 2rem;
-
   }
 
   .card-image img{
-   
     width: 100%;
     height: 150px;
-    
   }
 
 
@@ -118,11 +72,6 @@ body {
     align-items:center;    
     flex-wrap: wrap;
     
-  
-  }
-
-  .card .card-content:hover{
-  
   }
 
  .card-link{

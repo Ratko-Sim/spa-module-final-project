@@ -1,0 +1,80 @@
+.Deals-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    .Deals-card-left,
+    .Deals-card-right {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.Deals-card-left,
+.Deals-card-right {
+  width: 48%;
+  height: 20rem;
+  background-color: red;
+}
+
+.Deals-card-left, .Deals-card-right {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+
+  .Deals-label {
+    background-color: rgb(255, 132, 118);
+    width: 7rem;
+    text-align: center;
+    padding: .3rem;
+    border-radius: .5rem;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .95rem;
+  }
+
+  .Deals-title {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .Deals-price {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+  }
+
+  .Deals-button {
+    width: 7rem;
+    height: 2rem;
+    border: none;
+    border-radius: .7rem;
+    background-color: rgb(255, 62, 62);
+    color: white;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem;
+
+  }
+
+}
+.Deals-card-left  {
+  background-image: url("./deal1.png");
+}
+.Deals-card-right {
+  background-image: url("./deal2.png");
+
+}
