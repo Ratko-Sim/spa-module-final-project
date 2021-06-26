@@ -1,7 +1,8 @@
 import { combineReducers } from "redux"
+import { ReviewReducer } from "./ReviewReducer"; 
 
 const rootReducer = combineReducers({
-  //randomName: reducerName
-})
+  allReviews: ReviewReducer, 
+}); 
 
-export default rootReducer
+export default rootReducer; 

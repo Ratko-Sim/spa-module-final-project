@@ -1,0 +1,40 @@
+.reviews-section {
+  padding: 20px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+  
+  .reviews-section__inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+
+    h1 {
+      font-size: 25px;
+    }
+
+    .title-underline {
+      width: 170px;
+      height: 5px;
+      background: #f3a939;
+      margin: 26px auto;
+    }
+    .reviews-section__row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    button {
+      padding: 10px 30px;
+      margin: 10px auto; 
+      transition: 0.3s;
+      border: 1px solid gray; 
+      border-radius: 10px;
+      &:hover {
+        background-color: #332d38;
+        color: white;
+      }
+    }
+  }
+}
