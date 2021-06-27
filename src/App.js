@@ -17,19 +17,21 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
-        <AnimatePresence>
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/home" exact component={Home} />
-            <Route path="/productlisting" exact component={ProductListing} />
-            <Route path="/product/:productId" exact component={ProductDetails} />
-            <Route path="/notfound" exact component={NotFound} />
-            <Route path="/reviews" exact component={ReviewsPage} />
-            <Route path="/discount15" exact component={DiscountedProducts15} />
-            <Route path="/product15/:productId" exact component={DiscountedProduct15} />
-          </Switch>
-        </AnimatePresence>
+        <main>
+          <Header />
+          <AnimatePresence>
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/home" exact component={Home} />
+              <Route path="/productlisting" exact component={ProductListing} />
+              <Route path="/product/:productId" exact component={ProductDetails} />
+              <Route path="/notfound" exact component={NotFound} />
+              <Route path="/reviews" exact component={ReviewsPage} />
+              <Route path="/discount15" exact component={DiscountedProducts15} />
+              <Route path="/product15/:productId" exact component={DiscountedProduct15} />
+            </Switch>
+          </AnimatePresence>
+        </main>
         <Footer />
       </Router>
     </div>
