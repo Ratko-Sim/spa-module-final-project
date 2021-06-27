@@ -11,7 +11,7 @@ import { IoChevronBack } from "react-icons/io5"
 import { useHistory } from "react-router-dom";
 
 
-export const ProductDetails = () => {
+export const DiscountedProduct15 = () => {
   const product = useSelector((state) => state.product)
   const { image, title, price, description } = product;
   const { productId } = useParams();
@@ -19,7 +19,7 @@ export const ProductDetails = () => {
 
   let history = useHistory();
   const handleClick = () => {
-    history.push("/productlisting")
+    history.push("/discount15")
   }
 
   const fetchProductDetails = async () => {
@@ -56,7 +56,8 @@ export const ProductDetails = () => {
               </div>
               <div className="Details-content-wrapper">
                 <div className="Details-title">{title}</div>
-                <div className="Details-price">€ {price}</div>
+                <div className="Details-price-original">€ {price}</div>
+                <div className="Details-price-discounted">€ {Math.floor(price - (0.15 * price)) + ".99"}</div>
                 <div className="Details-description">{description}</div>
                 <button className="Details-button">Add to Cart</button>
                 <div className="Details-buyNow">

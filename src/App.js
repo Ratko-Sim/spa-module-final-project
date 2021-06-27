@@ -9,6 +9,8 @@ import { ProductDetails } from './components/ShopComponent/ProductDetails';
 import ReviewsPage from "./components/Home/ReviewsComponent/ReviewsPage/ReviewsPage"
 import { AnimatePresence } from "framer-motion"
 import Footer from "./components/Footer/Footer"
+import { DiscountedProducts15 } from "./components/ShopComponent/DiscountedProducts15"
+import { DiscountedProduct15 } from "./components/ShopComponent/DiscountedProduct15"
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
             <Route path="/product/:productId" exact component={ProductDetails} />
             <Route path="/notfound" exact component={NotFound} />
             <Route path="/reviews" exact component={ReviewsPage} />
+            <Route path="/discount15" exact component={DiscountedProducts15} />
+            <Route path="/product15/:productId" exact component={DiscountedProduct15} />
           </Switch>
         </AnimatePresence>
         <Footer />

@@ -14,7 +14,22 @@ img{
 .Details-wrapper {
   display: flex;
   justify-content: space-around;
-  margin-top: 10rem;
+  margin: 7rem 0;
+  position: relative;
+
+  .back-to-shop {
+    position: absolute;
+    left: 0;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    span {
+      margin-left: .3rem;
+    }
+  }
 
   @media only screen and (max-width: 800px) {
     flex-direction: column;
@@ -101,6 +116,17 @@ img{
         width: 6rem;
       }
     }
+  }
+
+  .Details-price-original {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    text-decoration-color: rgb(255, 62, 62);
+  }
+  .Details-price-discounted {
+    font-size: 2rem;
+    color: rgb(255, 62, 62);
+    margin-bottom: 1.5rem;
   }
   
 }
