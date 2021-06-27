@@ -14,7 +14,7 @@ export const ProductComponent = () => {
           <div className="card-image"><img src={image} alt={title} /></div>
           <div className="card-title">{title}</div>
           <div>
-            <div className="card-price">{price} €</div>
+            <div className="card-price">€ {price}</div>
           </div>
         </Link>
       </div>

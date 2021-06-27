@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from "./Logo/Logo"
 import Nav from "./Nav/Nav"
-
+import Sidebar from './Nav/Sidebar'
 
 
 const Header = () => {
@@ -10,6 +10,7 @@ const Header = () => {
     <div>
       <Logo />
       <Nav />
+      <Sidebar />
     </div>
   )
 }

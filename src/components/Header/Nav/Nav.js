@@ -1,8 +1,18 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import "./Nav.scss"
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useDispatch } from "react-redux";
+import { ShowSidebar } from "../../../Redux/actions/SidebarAction"
 
 function Nav() {
+
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(ShowSidebar());
+  };
+
   return (
     <div className="Nav-wrapper">
       <ul className="Nav-parent">
@@ -11,22 +21,14 @@ function Nav() {
             home
           </NavLink>
         </li>
-        <li className="Nav-item">
+        <li className="Nav-item Nav-rel">
           <NavLink activeClassName='Active-page' to='/productlisting'>
             shop
           </NavLink>
-        </li>
-        <li className="Nav-item">
-          LINK
-        </li>
-        <li className="Nav-item">
-          LINK
-        </li>
-        <li className="Nav-item">
-          LINK
-        </li>
-        <li className="Nav-item">
-          LINK
+          <GiHamburgerMenu
+            onClick={() => handleClick()}
+            className="Nav-menu"
+          />
         </li>
       </ul>
     </div>
