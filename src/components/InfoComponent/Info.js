@@ -21,7 +21,7 @@ const Info = () => {
             <div className="info-container">
                 <div className="info-img-container"><img src={PhoneIcon} alt="" /></div>
                 <h3>Service</h3>
-                <p>We are here to help Mo-Fri 08:00am-10:00pm</p>
+                <p>We are here to help <br /> Mo-Fri 08:00am-10:00pm</p>
             </div>
             <div className="info-container">
                 <div className="info-img-container"><img src={LockIcon} alt="" /></div>
