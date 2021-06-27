@@ -8,7 +8,7 @@ function DealsComponent() {
   let history = useHistory();
 
   const handleClick = () => {
-    history.push("/productlisting")
+    history.push("/discount15")
   }
 
   return (
@@ -22,7 +22,7 @@ function DealsComponent() {
       <div className="Deals-card-right">
         <span className="Deals-label">hot deals</span>
         <span className="Deals-title">extra</span>
-        <span className="Deals-price">50% OFF</span>
+        <span className="Deals-price">15% OFF</span>
         <button onClick={handleClick} className="Deals-button">shop now</button>
       </div>
     </div>
