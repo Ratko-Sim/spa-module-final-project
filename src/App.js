@@ -8,6 +8,7 @@ import { ProductListing } from './components/ShopComponent/ProductListing';
 import { ProductDetails } from './components/ShopComponent/ProductDetails';
 import ReviewsPage from "./components/Home/ReviewsComponent/ReviewsPage/ReviewsPage"
 import { AnimatePresence } from "framer-motion"
+import Info from './components/InfoComponent/Info';
 import Footer from "./components/Footer/Footer"
 import { DiscountedProducts15 } from "./components/ShopComponent/DiscountedProducts/DiscountedProducts15"
 import { DiscountedProduct15 } from "./components/ShopComponent/DiscountedProducts/DiscountedProduct15"
@@ -30,6 +31,7 @@ function App() {
             <Route path="/product15/:productId" exact component={DiscountedProduct15} />
           </Switch>
         </AnimatePresence>
+        <Info/>
         <Footer />
       </Router>
     </div>

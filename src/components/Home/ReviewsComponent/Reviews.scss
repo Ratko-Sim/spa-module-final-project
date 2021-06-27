@@ -19,21 +19,21 @@
       width: 10.625rem;
       height: .3rem;
       background: #f3a939;
-      margin: 1.625rem auto;
+      margin: 1.2rem auto;
     }
     .reviews-section__row {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
+
     button {
       padding: 0.625rem 1.875rem;
       margin: 0.625rem auto; 
       transition: 0.3s;
       border: 1px solid gray; 
-      border-radius: 0.625rem;
       &:hover {
-        background-color: #332d38;
+        background-color: #000000;
         color: white;
       }
     }

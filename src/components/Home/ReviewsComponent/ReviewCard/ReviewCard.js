@@ -7,7 +7,7 @@ const ReviewCard = () => {
 
   const renderList = reviews.map((review) => {
     return (
-      <div className="reviews-section__col">
+      <div key={review.id.value} className="reviews-section__col">
       <div className="review-card">
         <img src={review.picture.large} alt="Customers-image" />
         <div className="name">{`${review.name.first} ${review.name.last}`}</div>
