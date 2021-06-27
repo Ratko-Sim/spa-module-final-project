@@ -8,6 +8,7 @@ import { FaInstagram } from "react-icons/fa"
 import { AiFillAndroid } from "react-icons/ai"
 import { AiFillApple } from "react-icons/ai"
 import { RiSendPlaneFill } from "react-icons/ri"
+import { NavLink } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -32,9 +33,9 @@ function Footer() {
       <div className="Footer-section-3">
         <span className="Footer-title">about arhera</span>
         <ul className="Footer-link-parent">
-          <li>our team</li>
-          <li>terms and conditions</li>
-          <li>privacy policy</li>
+          <NavLink to='/terms'>our team</NavLink>
+          <NavLink to='/terms'>terms and conditions</NavLink>
+          <NavLink to='/privacy'>privacy policy</NavLink>
         </ul>
       </div>
       <div className="Footer-section-4">

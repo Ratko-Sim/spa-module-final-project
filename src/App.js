@@ -12,6 +12,9 @@ import Info from './components/InfoComponent/Info';
 import Footer from "./components/Footer/Footer"
 import { DiscountedProducts15 } from "./components/ShopComponent/DiscountedProducts/DiscountedProducts15"
 import { DiscountedProduct15 } from "./components/ShopComponent/DiscountedProducts/DiscountedProduct15"
+import TermsAndConditions from "../src/components/OtherPages/TermsAndConditions"
+import PrivacyPolicy from "../src/components/OtherPages/PrivacyPolicy"
+import Contact from "../src/components/Contact/Contact"
 
 function App() {
 
@@ -30,6 +33,9 @@ function App() {
               <Route path="/reviews" exact component={ReviewsPage} />
               <Route path="/discount15" exact component={DiscountedProducts15} />
               <Route path="/product15/:productId" exact component={DiscountedProduct15} />
+              <Route path="/terms" exact component={TermsAndConditions} />
+              <Route path="/privacy" exact component={PrivacyPolicy} />
+              <Route path="/contact" exact component={Contact} />
             </Switch>
           </AnimatePresence>
         </main>
