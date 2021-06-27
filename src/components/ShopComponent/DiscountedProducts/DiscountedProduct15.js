@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectedProducts, removeSelectedProducts } from '../../Redux/actions/productActions';
-import "./ProductDetails.scss";
-import paypal from "./paypal.png"
-import spin from "./Spinner-3.gif"
+import { selectedProducts, removeSelectedProducts } from '../../../Redux/actions/productActions';
+import "../ProductDetails.scss";
+import paypal from "../paypal.png"
+import spin from "../Spinner-3.gif"
 import { motion } from "framer-motion"
 import { IoChevronBack } from "react-icons/io5"
 import { useHistory } from "react-router-dom";

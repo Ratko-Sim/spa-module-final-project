@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import axios from 'axios'
 import { useDispatch, useSelector } from "react-redux"
-import { setProducts } from '../../Redux/actions/productActions'
-import "./ProductListing.scss";
+import { setProducts } from '../../../Redux/actions/productActions'
+import "../ProductListing.scss";
 import { motion } from "framer-motion"
-import spin from "./Spinner-3.gif"
-import "./ProductDetails.scss"
-import { showSpinner, showProducts } from "../../Redux/actions/SpinnerAction"
+import spin from "../Spinner-3.gif"
+import "../ProductDetails.scss"
+import { showSpinner, showProducts } from "../../../Redux/actions/SpinnerAction"
 import { useHistory } from "react-router-dom";
 import { IoChevronBack } from "react-icons/io5"
 import { Link } from 'react-router-dom';
