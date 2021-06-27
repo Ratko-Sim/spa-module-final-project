@@ -24,7 +24,21 @@ function Sidebar() {
             shop
           </NavLink>
         </li>
-
+        <li className="Sidebar-item">
+          <NavLink activeClassName='Active-page' to='/terms'>
+            t&c
+          </NavLink>
+        </li>
+        <li className="Sidebar-item">
+          <NavLink activeClassName='Active-page' to='/privacy'>
+            privacy policy
+          </NavLink>
+        </li>
+        <li className="Sidebar-item">
+          <NavLink activeClassName='Active-page' to='/contact'>
+            contact
+          </NavLink>
+        </li>
         <div className="Sidebar-X">
           <ImCancelCircle onClick={() => handleClick()} />
         </div>
