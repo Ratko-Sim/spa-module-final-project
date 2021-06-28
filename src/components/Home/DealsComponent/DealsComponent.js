@@ -7,23 +7,26 @@ function DealsComponent() {
 
   let history = useHistory();
 
-  const handleClick = () => {
+  const handleRightClick = () => {
     history.push("/discount15")
+  }
+  const handleLeftClick = () => {
+    history.push("/ProductListing")
   }
 
   return (
     <div className="Deals-wrapper">
       <div className="Deals-card-left">
-        <span className="Deals-label">hot deals</span>
-        <span className="Deals-title">under</span>
-        <span className="Deals-price">99€</span>
-        <button onClick={handleClick} className="Deals-button">shop now</button>
+        <span className="Deals-label">new arivals</span>
+        <span className="Deals-title">free</span>
+        <span className="Deals-title2">shipping</span>
+        <button onClick={handleLeftClick} className="Deals-button">shop now</button>
       </div>
       <div className="Deals-card-right">
         <span className="Deals-label">hot deals</span>
         <span className="Deals-title">extra</span>
         <span className="Deals-price">15% OFF</span>
-        <button onClick={handleClick} className="Deals-button">shop now</button>
+        <button onClick={handleRightClick} className="Deals-button">shop now</button>
       </div>
     </div>
   )
