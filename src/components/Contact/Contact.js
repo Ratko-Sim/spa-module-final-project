@@ -9,7 +9,7 @@ function Contact() {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}>
       <div className="Contact-top-container">
-        <h1>do you have some questions?</h1>
+        <h1>do you have questions?</h1>
       </div>
       <div className="Contact-card">
         <Form />

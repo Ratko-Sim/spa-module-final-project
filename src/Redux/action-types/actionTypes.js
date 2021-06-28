@@ -20,3 +20,7 @@ export const SidebarType = {
 export const UsersType = {
   SET_USERS: "SET_USERS"
 }
+
+export const DeliveryTimeType = {
+  SET_DELIVERY: "SET_DELIVERY"
+}

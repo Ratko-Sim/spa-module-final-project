@@ -23,8 +23,8 @@ function Footer() {
       <div className="Footer-section-2">
         <span className="Footer-title">CUSTOMER SERVICE</span>
         <ul className="Footer-link-parent">
-          <li>shipping</li>
-          <li>return</li>
+          <NavLink to='/shipping'>Shipping</NavLink>
+          <NavLink to='/returns'>returns</NavLink>
           <li>vouchers</li>
           <li>newsletter</li>
           <li>contact</li>
@@ -33,7 +33,7 @@ function Footer() {
       <div className="Footer-section-3">
         <span className="Footer-title">about arhera</span>
         <ul className="Footer-link-parent">
-          <NavLink to='/terms'>our team</NavLink>
+          <NavLink to='/ourteam'>our team</NavLink>
           <NavLink to='/terms'>terms and conditions</NavLink>
           <NavLink to='/privacy'>privacy policy</NavLink>
         </ul>

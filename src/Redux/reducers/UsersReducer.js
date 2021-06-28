@@ -22,7 +22,7 @@ const INITIAL_STATE = [
 export const UsersrReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case UsersType.SET_USERS:
-      return true;
+      return state;
     default:
       return state;
   }

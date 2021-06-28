@@ -25,6 +25,16 @@ function Sidebar() {
           </NavLink>
         </li>
         <li className="Sidebar-item">
+          <NavLink activeClassName='Active-page' to='/shipping'>
+            shipping
+          </NavLink>
+        </li>
+        <li className="Sidebar-item">
+          <NavLink activeClassName='Active-page' to='/returns'>
+            returns
+          </NavLink>
+        </li>
+        <li className="Sidebar-item">
           <NavLink activeClassName='Active-page' to='/terms'>
             t&c
           </NavLink>
