@@ -1,14 +1,10 @@
-.reviews-section {
-  padding: 1.25rem 0;
-  color: #434343;
-  text-align: center;
-  margin: 3rem 0;
-  
-  .reviews-section__inner {
-    max-width: 75rem;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 1.25rem;
+// * {
+//   outline: 1px solid black;
+// }
+
+  .reviews-section {
+    text-align: center;
+    margin: 2rem 0; 
 
     h1 {
       font-size: 1.563rem;
@@ -16,8 +12,14 @@
 
     .title-underline {
       width: 10.625rem;
-      height: .3rem;
-      background: #f3a939;
+      height: 0.2rem;
+      background: rgb(198, 28, 22);
+      background: linear-gradient(
+        90deg,
+        rgba(198, 28, 22, 1) 22%,
+        rgba(245, 171, 1, 1) 65%,
+        rgba(43, 145, 245, 1) 87%
+      );
       margin: 1.2rem auto;
     }
     .reviews-section__row {
@@ -28,13 +30,13 @@
 
     button {
       padding: 0.625rem 1.875rem;
-      margin-top: 3rem; 
+      margin-top: 2rem;
       transition: 0.3s;
-      border: 1px solid rgb(211, 211, 211); 
+      border: 1px solid rgb(211, 211, 211);
       &:hover {
         background-color: #000000;
         color: white;
       }
     }
   }
-}
+

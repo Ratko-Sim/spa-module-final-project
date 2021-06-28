@@ -1,14 +1,15 @@
 .reviews-section__col {
-  flex: 25%;
-  max-width: 25%;
+  flex: 20%;
+  max-width: 20%;
   box-sizing: border-box;
-  padding: 0.938rem;
+  padding: 0.7rem;
 
   .review-card {
     background: #fff;
-    padding: 1.25rem;
-    box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.096),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+
     img {
       width: 6.25rem;
       height: 6.25rem;
@@ -19,11 +20,11 @@
       font-size: 0.875rem;
       font-weight: 550;
       text-transform: uppercase;
-      margin: 0.938rem 0 0.313rem 0;
+      margin-top: 0.4rem; 
     }
     .location {
       font-size: 0.75rem;
-      margin-bottom: 0.625;
+      margin: 0.2rem 0 0.5rem 0;
     }
     .stars {
       color: #f3a939;
@@ -40,6 +41,7 @@
   .reviews-section__col {
     flex: 100%;
     max-width: 80%;
+    
   }
 }
 
@@ -47,5 +49,6 @@
   .reviews-section__col {
     flex: 100%;
     max-width: 100%;
+    padding: 0.7rem 0;
   }
 }
