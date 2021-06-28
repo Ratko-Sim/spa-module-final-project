@@ -59,8 +59,8 @@ function Footer() {
         <div className="sec-4-cont">
           <span className="Footer-title">delivery partners</span>
           <div className="Footer-logo-cont">
-            <i class="fab fa-dhl"></i>
-            <i class="fab fa-ups"></i>
+            <i className="fab fa-dhl"></i>
+            <i className="fab fa-ups"></i>
           </div>
         </div>
       </div>

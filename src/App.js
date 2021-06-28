@@ -15,6 +15,7 @@ import { DiscountedProduct15 } from "./components/ShopComponent/DiscountedProduc
 import TermsAndConditions from "../src/components/OtherPages/TermsAndConditions"
 import PrivacyPolicy from "../src/components/OtherPages/PrivacyPolicy"
 import Contact from "../src/components/Contact/Contact"
+import OurTeam from "./components/OtherPages/OurTeam/OurTeam"
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
               <Route path="/terms" exact component={TermsAndConditions} />
               <Route path="/privacy" exact component={PrivacyPolicy} />
               <Route path="/contact" exact component={Contact} />
+              <Route path="/ourteam" exact component={OurTeam} />
             </Switch>
           </AnimatePresence>
         </main>
