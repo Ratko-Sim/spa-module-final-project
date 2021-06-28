@@ -4,7 +4,7 @@
 
 img{
   position: absolute;
-  width: 5rem;
+  width: 19rem;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -28,6 +28,9 @@ img{
 
     span {
       margin-left: .3rem;
+    }
+    @media only screen and (max-width: 690px) {
+      top: 0;
     }
   }
 

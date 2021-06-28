@@ -1,6 +1,29 @@
 .Contact{
   text-align: center;
   margin-top: 5rem;
+  height: 50rem;
+  position: relative;
+  width: 100%;
+  
+  .Contact-image {
+    height: 50rem;
+    width: 100%;
+    background-image: url("./287-2870487_email-marketing-png-transparent-png-removebg-preview.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    transform: rotate(-15deg);
+    z-index: -1;
+    transition: 2s;
+
+    @media only screen and (max-width: 900px) {
+      top: -5rem;
+    }
+
+  }
 
   h1 {
     text-transform: capitalize;
@@ -10,22 +33,32 @@
     display: flex;
     flex-direction: column;
     width: 40%;
+    min-width: 30rem;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0;
+    margin: 10rem 0;
+    transition: 2s;
+
+    @media only screen and (max-width: 900px) {
+      margin: 5rem auto;
+      width: 100%;
+      min-width: 95%;
+    }
+
+
 
     input, textarea {
       width: 80%;
       margin: .5rem;
       border: none;
-      background-color: #e6e4e4;
+      background-color: #e6e4e4d7;
       padding-left: 1rem;
       box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     }
 
     textarea {
       padding-top: .7rem;
-      
+      resize: none;
     }
 
     input:focus, textarea:focus {
@@ -34,12 +67,12 @@
     }
 
     input {
-      height: 2rem;
+      height: 2.5rem;
     }
 
     button {
       width: 80%;
-      height: 2rem;
+      height: 2.2rem;
       border: none;
       text-transform: uppercase;
       font-weight: 500;
