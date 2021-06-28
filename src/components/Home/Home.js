@@ -3,6 +3,7 @@ import HeroSlider from "./HeroSlider/HeroSlider"
 import DealsComponent from "./DealsComponent/DealsComponent"
 import Reviews from './ReviewsComponent/Reviews';
 import { motion } from "framer-motion"
+import Trending from './TrendingComponent/Trending';
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       initial={{ opacity: 0 }}>
       <HeroSlider />
       <DealsComponent />
+      <Trending/>
       <Reviews />
     </motion.div>
   )
