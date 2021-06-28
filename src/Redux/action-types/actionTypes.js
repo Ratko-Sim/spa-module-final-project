@@ -12,3 +12,11 @@ export const SidebarType = {
   SHOW_SIDEBAR: "SHOW_SIDEBAR",
   HIDE_SIDEBAR: "HIDE_SIDEBAR"
 }
+
+
+
+
+
+export const UsersType = {
+  SET_USERS: "SET_USERS"
+}
