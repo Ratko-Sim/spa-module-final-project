@@ -31,29 +31,47 @@ const Trending = () => {
   }, []);
 
   return (
-    <div className="reviews-section">
-        <h1>Trending Products</h1>
-        <div className="title-underline"></div>
+    <div className="reviews-section" >
+      <h1>Trending Products</h1>
+      <div className="title-underline"></div>
       <Swiper
-      style={{'--swiper-navigation-color': 'black','--swiper-pagination-color': '#515054'}}
+        style={{
+          "--swiper-navigation-color": "black",
+          "--swiper-pagination-color": "#515054",
+        }}
         slidesPerView={5}
-        spaceBetween={0}
+        spaceBetween={5}
         slidesPerGroup={1}
         loop={false}
         loopFillGroupWithBlank={true}
-        pagination={{
-          clickable: true,
+
+        breakpoints={{
+          "@0.00": {
+            slidesPerView: 1,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+          },
+          "@1.25": {
+            slidesPerView: 4,
+          },
+          "@1.50": {
+            slidesPerView: 5,
+          },
         }}
         navigation={true}
         className="mySwiper"
       >
-        {products.map((item) => (
-          <SwiperSlide>
+        {products.map((product) => (
+          <SwiperSlide className="swiper-slide">
             <TrendingProductComponent
-              key={item.id}
-              title={item.title}
-              image={item.image}
-              price={item.price}
+              key={product.id}
+              title={product.title}
+              image={product.image}
+              price={product.price}
             />
           </SwiperSlide>
         ))}
