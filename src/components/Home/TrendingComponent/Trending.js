@@ -19,7 +19,7 @@ const Trending = () => {
 
   const fetchProducts = async () => {
     const response = await axios
-      .get("https://fakestoreapi.com/products?limit=9")
+      .get("https://fakestoreapi.com/products?limit=12")
       .catch((err) => {
         console.error(err);
       });
