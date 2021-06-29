@@ -12,12 +12,16 @@ import Info from './components/InfoComponent/Info';
 import Footer from "./components/Footer/Footer"
 import { DiscountedProducts15 } from "./components/ShopComponent/DiscountedProducts/DiscountedProducts15"
 import { DiscountedProduct15 } from "./components/ShopComponent/DiscountedProducts/DiscountedProduct15"
-import TermsAndConditions from "../src/components/OtherPages/TermsAndConditions"
-import PrivacyPolicy from "../src/components/OtherPages/PrivacyPolicy"
+import TermsAndConditions from "../src/components/OtherPages/T&C/TermsAndConditions"
+import PrivacyPolicy from "./components/OtherPages/T&C/PrivacyPolicy"
 import Contact from "../src/components/Contact/Contact"
+import { Cart } from './components/Cart/Cart';
 import OurTeam from "./components/OtherPages/OurTeam/OurTeam"
-import Returns from "./components/OtherPages/Returns"
+import Returns from "./components/OtherPages/T&C/Returns"
 import Shipping from "./components/OtherPages/Shipping/Shipping"
+import Vouchers from './components/OtherPages/Vouchers/Vouchers';
+
+
 function App() {
 
   return (
@@ -29,6 +33,8 @@ function App() {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/home" exact component={Home} />
+              <Route path="/cart/" exact component={Cart} />
+              <Route path="/cart/:productId" exact component={Cart} />
               <Route path="/productlisting" exact component={ProductListing} />
               <Route path="/product/:productId" exact component={ProductDetails} />
               <Route path="/notfound" exact component={NotFound} />
@@ -41,6 +47,7 @@ function App() {
               <Route path="/ourteam" exact component={OurTeam} />
               <Route path="/returns" exact component={Returns} />
               <Route path="/shipping" exact component={Shipping} />
+              <Route path="/vouchers" exact component={Vouchers} />
             </Switch>
           </AnimatePresence>
         </main>

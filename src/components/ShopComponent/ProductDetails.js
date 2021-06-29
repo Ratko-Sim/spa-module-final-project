@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
@@ -12,15 +12,15 @@ import { useHistory } from "react-router-dom";
 
 
 export const ProductDetails = () => {
-  const product = useSelector((state) => state.product)
+
+
+  const product = useSelector((state) => state.product);
   const { image, title, price, description } = product;
   const { productId } = useParams();
+  const [qty, setQty] = useState(1)
   const dispatch = useDispatch();
 
   let history = useHistory();
-  const handleClick = () => {
-    history.push("/productlisting")
-  }
 
   const fetchProductDetails = async () => {
     const response = await axios.get(`https://fakestoreapi.com/products/${productId}`)
@@ -36,6 +36,10 @@ export const ProductDetails = () => {
       dispatch(removeSelectedProducts());
     }
   }, [productId])
+
+  const addToCartHandler = () => {
+    history.push(`/cart/${productId}?qty=${qty}`)
+  }
   return (
     <div>
       {
@@ -47,7 +51,7 @@ export const ProductDetails = () => {
               exit={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }} className="Details-wrapper">
-              <div onClick={handleClick} className="back-to-shop">
+              <div onClick={() => history.goBack()} className="back-to-shop">
                 <IoChevronBack />
                 <span>back</span>
               </div>
@@ -58,7 +62,32 @@ export const ProductDetails = () => {
                 <div className="Details-title">{title}</div>
                 <div className="Details-price">€ {price}</div>
                 <div className="Details-description">{description}</div>
-                <button className="Details-button">Add to Cart</button>
+                <button onClick={addToCartHandler} className="Details-button">Add to Cart</button>
+                <li>
+                  <div>Qty</div>
+                  <div>
+                    <select value={qty} onChange={e => setQty(e.target.value)}>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+
+                      {/* {
+                        [...Array(product).keys()].map((x) => (
+                          <option key={x + 1} value={x + 1}>
+                            {x + 1}
+                          </option>
+                        ))
+                      } */}
+                    </select>
+                  </div>
+                </li>
                 <div className="Details-buyNow">
                   <div>Buy now with</div>
                   <img src={paypal} alt="paypal" />

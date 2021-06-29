@@ -25,9 +25,8 @@ function Footer() {
         <ul className="Footer-link-parent">
           <NavLink to='/shipping'>Shipping</NavLink>
           <NavLink to='/returns'>returns</NavLink>
-          <li>vouchers</li>
-          <li>newsletter</li>
-          <li>contact</li>
+          <NavLink to='/vouchers'>vouchers</NavLink>
+          <NavLink to='/contact'>contact</NavLink>
         </ul>
       </div>
       <div className="Footer-section-3">

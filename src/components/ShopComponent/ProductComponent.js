@@ -5,9 +5,11 @@ import "./ProductComponent.scss";
 
 export const ProductComponent = () => {
   const products = useSelector((state) => state.allProducts.products)
+
   const renderList = products.map((products) => {
 
     const { id, title, image, price } = products;
+
     return (
       <div className="Card" key={id}>
         <Link to={`/product/${id}`}  >
