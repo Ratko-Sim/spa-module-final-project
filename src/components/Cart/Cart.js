@@ -45,40 +45,40 @@ export const Cart = () => {
               cartItems.map((item) => (
                 <div key={item.product}
                   className="cart-card">
-
                   <div className="image">
                     <img src={item.image}
                       alt={item.name} />
                   </div>
-                  <div className="link">
-                    <Link to={`/product/${item.product}`}>{item.name}</Link>
-                  </div>
-                  <div className="option">
-                    <select className="select" value={item.qty} onChange={e => dispatch(addToCart(item.product, Number(e.target.value)))}>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-
-                      {/* {[...Array(item.product).keys()].map((x) => (
+                  <div className="text-wrap">
+                    <div className="link">
+                      <Link to={`/product/${item.product}`}>{item.name}</Link>
+                    </div>
+                    <div className="price-wrap">
+                      <div className="option">
+                        <select className="select" value={item.qty} onChange={e => dispatch(addToCart(item.product, Number(e.target.value)))}>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          {/* {[...Array(item.product).keys()].map((x) => (
                             <option key={x + 1} value={x + 1}>
                               {x + 1}
                             </option>
                           ))} */}
-
-                    </select>
+                        </select>
+                      </div>
+                      <div className="price">€{item.price}</div>
+                      <div className="btn">
+                        <button className="delete" type="button" onClick={() => removeFromCartHandler(item.product)}>Delete</button>
+                      </div>
+                    </div>
                   </div>
-                  <div className="price">€{item.price}</div>
-                  <div>
-                    <button className="delete" type="button" onClick={() => removeFromCartHandler(item.product)}>Delete</button>
-                  </div>
-
                 </div>
               ))
             }
