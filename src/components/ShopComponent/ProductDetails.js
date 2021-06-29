@@ -35,6 +35,7 @@ export const ProductDetails = () => {
     return () => {
       dispatch(removeSelectedProducts());
     }
+    // eslint-disable-next-line
   }, [productId])
 
   const addToCartHandler = () => {

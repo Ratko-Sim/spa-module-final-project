@@ -30,6 +30,7 @@ export const ProductListing = () => {
 
   useEffect(() => {
     fetchProducts();
+    // eslint-disable-next-line
   }, []);
 
   return (

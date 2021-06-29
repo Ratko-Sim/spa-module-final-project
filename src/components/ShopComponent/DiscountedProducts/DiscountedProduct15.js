@@ -32,6 +32,7 @@ export const DiscountedProduct15 = () => {
     return () => {
       dispatch(removeSelectedProducts());
     }
+    // eslint-disable-next-line
   }, [productId])
   return (
     <div>

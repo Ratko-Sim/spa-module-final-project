@@ -72,9 +72,8 @@ function PrivacyPolicy() {
       </ol>
       <h2>DAMAGES AND LIMITATION OF LIABILITY</h2>
       <p>We also automatically collect information via the Website through the use of various technologies, including, but not limited to Cookies and Web Beacons (explained below). We may collect your IP address, browsing behavior and device IDs. This information is used by us in order to enable us to better understand how our Services are being used by visitors and allows us to administer and customize the Services to improve your overall experience.
-        <h2>INFORMATION COLLECTED FROM OTHER SOURCES
-        </h2>
       </p>
+      <h2>INFORMATION COLLECTED FROM OTHER SOURCES</h2>
       <p>We may also receive information from other sources and combine that with information we collect through our Services. For example if you choose to link, create, or log in to your Lorem Ipsum account with a social media service, e.g. LinkedIn, Facebook or Twitter, or if you engage with a separate App or Website that uses our API, or whose API we use, we may receive information about you or your connections from that Site or App. This includes, without limitation, profile information, profile picture, gender, user name, user ID associated with your social media account, age range, language, country, friends list, and any other information you permit the social network to share with third parties. The data we receive is solely dependent upon your privacy settings with the social network.
       </p>
       <h2>INFORMATION THIRD PARTIES PROVIDE

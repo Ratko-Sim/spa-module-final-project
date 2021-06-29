@@ -1,8 +1,9 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import ReviewCard from "../ReviewCard/ReviewCard";
 import { setReviews } from "../../../../Redux/actions/ReviewActions";
+import { motion } from "framer-motion"
 
 
 const ReviewsPage = () => {
@@ -19,17 +20,20 @@ const ReviewsPage = () => {
 
   useEffect(() => {
     fetchReviews();
+    // eslint-disable-next-line
   }, []);
-  
+
 
   return (
-    
-      <div className="reviews-section">
-        <div className="reviews-section__row">
-          <ReviewCard />
-        </div>
+
+    <motion.div className="reviews-section" exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}>
+      <div className="reviews-section__row">
+        <ReviewCard />
       </div>
-    
+    </motion.div>
+
   );
 };
 
