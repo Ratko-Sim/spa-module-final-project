@@ -31,7 +31,7 @@ const Trending = () => {
   }, []);
 
   return (
-    <div className="reviews-section" >
+    <div className="trending-section">
       <h1>Trending Products</h1>
       <div className="title-underline"></div>
       <Swiper
@@ -44,7 +44,6 @@ const Trending = () => {
         slidesPerGroup={1}
         loop={false}
         loopFillGroupWithBlank={true}
-
         breakpoints={{
           "@0.00": {
             slidesPerView: 1,
@@ -65,10 +64,9 @@ const Trending = () => {
         navigation={true}
         className="mySwiper"
       >
-        {products.map((product) => (
-          <SwiperSlide className="swiper-slide">
+        {products.map((product, i) => (
+          <SwiperSlide key={i} className="swiper-slide">
             <TrendingProductComponent
-              key={product.id}
               title={product.title}
               image={product.image}
               price={product.price}

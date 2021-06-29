@@ -29,7 +29,7 @@ const Reviews = () => {
         <div className="reviews-section__row">
           <ReviewCard />
         </div>
-        <Link to="/reviews"><button>See more customer reviews</button></Link>
+        <div className="reviews-section-button-box"><Link to="/reviews"><button>See more customer reviews</button></Link></div>
       </div>
     
   );

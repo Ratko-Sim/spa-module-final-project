@@ -2,42 +2,31 @@
 //   outline: 1px solid red;
 // }
 
-
 .trending-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   height: 18rem;
-  padding: 1rem; 
+  padding: 1rem;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin: 0.2rem 0.1rem;
 
-  .trending-card-image{
+  .trending-card-image {
     img {
       object-fit: contain;
       height: 8rem;
       width: 8rem;
     }
   }
-
   .trending-card-title {
     font-size: 0.9rem;
     font-weight: 300;
   }
-  
+
   .trending-card-price {
     font-weight: 600;
     font-size: 1rem;
   }
-
 }
-
-
-
-  
-
-
-
-
