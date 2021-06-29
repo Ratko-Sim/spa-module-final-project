@@ -48,10 +48,10 @@ const Trending = () => {
           "@0.00": {
             slidesPerView: 1,
           },
-          "@0.75": {
+          "@0.50": {
             slidesPerView: 2,
           },
-          "@1.00": {
+          "@0.90": {
             slidesPerView: 3,
           },
           "@1.25": {
