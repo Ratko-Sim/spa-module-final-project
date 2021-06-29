@@ -10,7 +10,7 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 5rem;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 900px) {
     flex-direction: column;
   }
   .Vouchers-wrapper-left {
@@ -20,7 +20,7 @@
     justify-content: space-between;
     transition: 2s;
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
       width: 100%;
     }
     .Vouchers-left-top {
@@ -32,8 +32,9 @@
       align-items: flex-end;
       padding: 3rem 2rem;
       margin-bottom: 1rem;
-      @media only screen and (max-width: 800px) {
+      @media only screen and (max-width: 900px) {
         align-items: center;
+
       }
       .Vouchers-left-top-content {
         width: 50%;
@@ -42,7 +43,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 900px) {
           width: 80%;
         }
 
@@ -54,6 +55,7 @@
         color: white;
         font-size: .9rem;
         width: 90%;
+        min-height: 9rem;
       }
       button {
         padding: 0 2rem;
@@ -82,11 +84,11 @@
   border: .1rem solid black;
   background-color: rgb(241, 241, 241);
   border:none;
-  padding-bottom: 2rem;
   padding-left: 2rem;
-  margin-bottom: 1rem;
-  @media only screen and (max-width: 800px) {
+  padding: .6rem 0;
+  @media only screen and (max-width: 900px) {
     padding-left: 0;
+    margin-bottom: 1rem;
 
     h4 {
       text-align: center;
@@ -103,6 +105,8 @@
     font-weight: 400;
     color: rgb(79, 78, 78);
     padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
 
   }
   .Vouchers-left-bottom-wrap {

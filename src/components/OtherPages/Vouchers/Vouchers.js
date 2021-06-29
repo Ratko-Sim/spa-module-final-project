@@ -16,7 +16,7 @@ function Vouchers() {
           <div className="Vouchers-left-top">
             <div className="Vouchers-left-top-content">
               <h2>Looking for a gift?</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, praesentium sed cupiditate odio repellat delectus labore ipsum iste, modi nostrum impedit quaerat aliquid quis voluptate officia magni commodi ipsa dolorum.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, praesentium sed cupiditate odio repellat delectus labore ipsum iste, modi nostrum impedit quaerat aliquid quis voluptate officia magni commodi.</p>
               <button>gift a voucher</button>
             </div>
           </div>
