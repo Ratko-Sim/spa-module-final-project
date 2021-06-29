@@ -67,6 +67,7 @@ const Trending = () => {
         {products.map((product, i) => (
           <SwiperSlide key={i} className="swiper-slide">
             <TrendingProductComponent
+              id={product.id}
               title={product.title}
               image={product.image}
               price={product.price}

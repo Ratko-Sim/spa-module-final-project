@@ -3,8 +3,8 @@
 // }
 
 .reviews-section {
-  margin: 2rem 0; 
-  
+  margin: 2rem 0;
+
   h1 {
     font-size: 1.4rem;
     background-color: whitesmoke;
@@ -29,20 +29,19 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-.reviews-section-button-box {
-text-align: center;
-
-  button {
-    max-width: 16rem;
-    padding: 0.625rem 1.875rem;
-    margin: 1.5rem auto 1rem auto;
-    transition: 0.3s;
-    border: 1px solid rgb(211, 211, 211);
-    &:hover {
-      background-color: #000000;
-      color: white;
-      cursor: pointer;
+  .reviews-section-button-box {
+    text-align: center;
+    button {
+      max-width: 16rem;
+      padding: 0.625rem 1.875rem;
+      margin: 1.5rem auto 1rem auto;
+      transition: 0.3s;
+      border: 1px solid rgb(211, 211, 211);
+      &:hover {
+        background-color: #000000;
+        color: white;
+        cursor: pointer;
+      }
     }
-  }
   }
 }

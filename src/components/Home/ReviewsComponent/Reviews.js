@@ -22,7 +22,6 @@ const Reviews = () => {
   }, []);
 
   return (
-   
       <div className="reviews-section">
         <h1>Customer Reviews</h1>
         <div className="title-underline"></div>

@@ -11,7 +11,14 @@
   padding: 1rem;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin: 0.2rem 0.1rem;
+  margin: 1rem 0.1rem;
+  position: relative;
+  top: 0;
+  transition: top ease 0.2s;
+
+  &:hover {
+    top: -7px;
+  }
 
   .trending-card-image {
     img {
