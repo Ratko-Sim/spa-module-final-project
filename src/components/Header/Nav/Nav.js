@@ -21,7 +21,7 @@ function Nav() {
             home
           </NavLink>
         </li>
-        <li className="Nav-item Nav-rel">
+        <li className="Nav-item">
           <NavLink activeClassName='Active-page' to='/productlisting'>
             shop
           </NavLink>
@@ -31,6 +31,21 @@ function Nav() {
           />
         </li>
         <li className="Nav-item">
+          <NavLink activeClassName='Active-page' to='/shipping'>
+            shipping
+          </NavLink>
+        </li>
+        <li className="Nav-item">
+          <NavLink activeClassName='Active-page' to='/returns'>
+            returns
+          </NavLink>
+        </li>
+        <li className="Nav-item">
+          <NavLink activeClassName='Active-page' to='/vouchers'>
+            vouchers
+          </NavLink>
+        </li>
+        <li className="Nav-item">
           <NavLink activeClassName='Active-page' to='/terms'>
             t&c
           </NavLink>
@@ -38,6 +53,11 @@ function Nav() {
         <li className="Nav-item">
           <NavLink activeClassName='Active-page' to='/privacy'>
             privacy policy
+          </NavLink>
+        </li>
+        <li className="Nav-item">
+          <NavLink activeClassName='Active-page' to='/ourteam'>
+            our team
           </NavLink>
         </li>
         <li className="Nav-item">

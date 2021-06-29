@@ -35,6 +35,11 @@
       padding-left: 1rem;
       border: none;
     }
+
+    input:focus {
+      outline: 2px solid rgb(255, 236, 160);
+      
+    }
     .Footer-input-icon {
       position: absolute;
       right: .2rem;
@@ -68,6 +73,16 @@
       margin: 1.3rem;
       flex-wrap: wrap;
       margin-left: -1rem;
+
+      a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
 
       li {
         margin: .5rem 0;

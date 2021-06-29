@@ -67,6 +67,10 @@
       height: 2.3rem;
       padding-left: 1rem;
       }
+
+      input:focus {
+        outline: none;
+      }
       
       button {
         height: 2.3rem;

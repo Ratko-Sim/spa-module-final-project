@@ -25,6 +25,21 @@ function Sidebar() {
           </NavLink>
         </li>
         <li className="Sidebar-item">
+          <NavLink activeClassName='Active-page' to='/shipping'>
+            shipping
+          </NavLink>
+        </li>
+        <li className="Sidebar-item">
+          <NavLink activeClassName='Active-page' to='/returns'>
+            returns
+          </NavLink>
+        </li>
+        <li className="Sidebar-item">
+          <NavLink activeClassName='Active-page' to='/vouchers'>
+            vouchers
+          </NavLink>
+        </li>
+        <li className="Sidebar-item">
           <NavLink activeClassName='Active-page' to='/terms'>
             t&c
           </NavLink>
@@ -32,6 +47,11 @@ function Sidebar() {
         <li className="Sidebar-item">
           <NavLink activeClassName='Active-page' to='/privacy'>
             privacy policy
+          </NavLink>
+        </li>
+        <li className="Sidebar-item">
+          <NavLink activeClassName='Active-page' to='/ourteam'>
+            our team
           </NavLink>
         </li>
         <li className="Sidebar-item">

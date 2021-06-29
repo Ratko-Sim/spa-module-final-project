@@ -17,8 +17,11 @@ export const SidebarType = {
   HIDE_SIDEBAR: "HIDE_SIDEBAR"
 };
 
+export const UsersType = {
+  SET_USERS: "SET_USERS"
+}
 
-// export const ADD_TO_CART = 'ADD_TO_CART';
-// export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
-// export const ADJUST_QUANTITY = 'ADJUST_QUANTITY';
-// export const LOAD_CURRENT_ITEM = "LOAD_CURRENT_ITEM";
+export const DeliveryTimeType = {
+  SET_DELIVERY: "SET_DELIVERY"
+}
+

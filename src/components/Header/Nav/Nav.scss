@@ -4,21 +4,34 @@
   height: 2.3rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   border-bottom: .1rem solid rgb(240, 240, 240);
   margin-bottom: 2rem;
 }
 
 .Nav-parent {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   list-style-type: none;
-  width: 50%;
+  width: 100%;
   max-width: 60rem;
   height: 100%;
   align-items: center;
+  position: relative;
+  .Nav-menu {
+    font-size: 1.8rem;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0.2rem;
+  
+    @media only screen and (max-width: 900px) {
+      display: block;
+    }
+  }
 }
-
+  
 .Nav-item a {
   text-decoration: none;
   text-transform: uppercase;
@@ -26,7 +39,7 @@
   color: rgb(84, 84, 84);
   font-weight: 500;
   margin-right: 1rem;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     display: none;
   }
 }
@@ -45,7 +58,7 @@
   cursor: pointer;
 
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     display: block;
   }
  

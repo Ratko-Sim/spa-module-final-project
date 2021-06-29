@@ -11,7 +11,7 @@ const ReviewCard = () => {
       <div className="review-card">
         <img src={review.picture.large} alt="Customers-image" />
         <div className="name">{`${review.name.first} ${review.name.last}`}</div>
-        <div className="location">{`${review.location.city}, ${review.location.country}`}</div>
+        <div className="location">{review.location.country}</div>
         <div className="stars">
           <i className="fas fa-star"></i>
           <i className="fas fa-star"></i>

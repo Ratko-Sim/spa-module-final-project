@@ -19,21 +19,18 @@ function HeroSlider() {
         <div className="each-slide">
           <div className="slide-1">
             <p>the coolest styles are here</p>
-            <span>50% OFF</span>
             <button onClick={handleClick}>explore</button>
           </div>
         </div>
         <div className="each-slide">
           <div className="slide-2">
             <p>the coolest styles are here</p>
-            <span>50% OFF</span>
             <button onClick={handleClick}>explore</button>
           </div>
         </div>
         <div className="each-slide">
           <div className="slide-3">
             <p>the coolest styles are here</p>
-            <span>50% OFF</span>
             <button onClick={handleClick}>explore</button>
           </div>
         </div>

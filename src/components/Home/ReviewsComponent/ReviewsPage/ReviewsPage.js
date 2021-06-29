@@ -10,7 +10,7 @@ const ReviewsPage = () => {
 
   const fetchReviews = async () => {
     const response = await axios
-      .get("https://randomuser.me/api/?nat=us,dk,fr,gb&results=16")
+      .get("https://randomuser.me/api/?nat=us,dk,fr,gb&results=20")
       .catch((err) => {
         console.log("Err", err);
       });
@@ -23,13 +23,13 @@ const ReviewsPage = () => {
   
 
   return (
-    <div className="reviews-section">
-      <div className="reviews-section__inner">
+    
+      <div className="reviews-section">
         <div className="reviews-section__row">
           <ReviewCard />
         </div>
       </div>
-    </div>
+    
   );
 };
 

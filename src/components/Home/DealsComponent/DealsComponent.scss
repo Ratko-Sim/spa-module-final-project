@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 3rem;
+  margin-top: 1.3rem;
   flex-wrap: wrap;
 
 
@@ -24,7 +24,7 @@
 
 .Deals-card-left,
 .Deals-card-right {
-  width: 48%;
+  width: 49%;
   height: 22rem;
 }
 
@@ -37,7 +37,7 @@
 
   .Deals-label {
     background-color: rgb(255, 132, 118);
-    width: 7rem;
+    width: 8rem;
     text-align: center;
     padding: .3rem;
     color: white;
@@ -52,6 +52,14 @@
     font-size: 1.3rem;
     text-transform: uppercase;
     color: white;
+  }
+
+  .Deals-title2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 1rem;
   }
 
   .Deals-price {

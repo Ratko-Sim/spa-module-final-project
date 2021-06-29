@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 10rem auto;
+  margin: 6rem auto;
   justify-content: center;
   justify-content: space-between;
   position: relative;
@@ -15,6 +15,10 @@
     align-items: center;
     cursor: pointer;
     text-transform: capitalize;
+    @media only screen and (max-width: 690px) {
+      
+      left: 0;
+    }
 
 
     span {
