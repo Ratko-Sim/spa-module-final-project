@@ -18,9 +18,6 @@ export const ProductDetails = () => {
   const dispatch = useDispatch();
 
   let history = useHistory();
-  const handleClick = () => {
-    history.push("/productlisting")
-  }
 
   const fetchProductDetails = async () => {
     const response = await axios.get(`https://fakestoreapi.com/products/${productId}`)
@@ -47,7 +44,7 @@ export const ProductDetails = () => {
               exit={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }} className="Details-wrapper">
-              <div onClick={handleClick} className="back-to-shop">
+              <div onClick={() => history.goBack()} className="back-to-shop">
                 <IoChevronBack />
                 <span>back</span>
               </div>

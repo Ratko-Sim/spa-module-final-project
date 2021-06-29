@@ -16,9 +16,6 @@ export const ProductListing = () => {
   const dispatch = useDispatch()
 
   let history = useHistory();
-  const handleClick = () => {
-    history.push("/home")
-  }
 
   const fetchProducts = async () => {
     dispatch(showSpinner())
@@ -47,7 +44,7 @@ export const ProductListing = () => {
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             className="Products-Container">
-            <div onClick={handleClick} className="back-to-home">
+            <div onClick={() => history.goBack()} className="back-to-home">
               <IoChevronBack />
               <span>back</span>
             </div>
