@@ -1,10 +1,14 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import "./Logo.scss"
 import arheraIcon from "./arhera-icon.png"
 import shoppingCart from "./shopping-cart.png"
 import searchIcon from "./search-icon.png"
+import { useSelector } from 'react-redux';
 
 function Logo() {
+  const cart = useSelector((state) => state.cart);
+  const { cartItems } = cart
 
   return (
     <div className="Top-wrapper">
@@ -25,9 +29,13 @@ function Logo() {
             <input type="search" placeholder="Search..." />
             <button><img src={searchIcon} alt="search icon" /></button>
           </div>
-          <div className="Shopping-icon-container">
+
+          <Link to="/cart" className="Shopping-icon-container">
+            <h3 className="Shopping-title">My Cart</h3>
             <img className="Shopping-icon" src={shoppingCart} alt="" />
-          </div>
+            <div className="Shopping-counter">{cartItems.length > 0 && (<span className="Shopping-counter-badge">{cartItems.length}</span>)}</div>
+          </Link>
+
         </div>
       </div>
     </div>

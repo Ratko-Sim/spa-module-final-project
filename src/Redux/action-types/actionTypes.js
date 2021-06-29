@@ -2,20 +2,20 @@ export const ActionTypes = {
   SET_PRODUCTS: "SET_PRODUCTS",
   SELECTED_PRODUCT: "SELECTED_PRODUCT",
   REMOVE_SELECTED_PRODUCT: "REMOVE_SELECTED_PRODUCT",
-}
+  ADD_TO_CART: 'ADD_TO_CART',
+  REMOVE_FROM_CART: 'REMOVE_FROM_CART',
+  // ADJUST_QUANTITY: 'ADJUST_QUANTITY',
+  // LOAD_CURRENT_ITEM: "LOAD_CURRENT_ITEM",
+};
 
 export const SpinnerType = {
   SHOW_SPINNER: "SHOW_SPINNER",
   SHOW_PRODUCTS: "SHOW_PRODUCTS"
-}
+};
 export const SidebarType = {
   SHOW_SIDEBAR: "SHOW_SIDEBAR",
   HIDE_SIDEBAR: "HIDE_SIDEBAR"
-}
-
-
-
-
+};
 
 export const UsersType = {
   SET_USERS: "SET_USERS"
@@ -24,3 +24,4 @@ export const UsersType = {
 export const DeliveryTimeType = {
   SET_DELIVERY: "SET_DELIVERY"
 }
+
