@@ -10,7 +10,7 @@ const Reviews = () => {
   const dispatch = useDispatch();
   const fetchReviews = async () => {
     const response = await axios
-      .get(`https://randomuser.me/api/?nat=us,dk,fr,gb&results=5`)
+      .get(`https://randomuser.me/api/?nat=us,dk,fr,gb&results=4`)
       .catch((err) => {
         console.log("Err", err);
       });
@@ -30,7 +30,7 @@ const Reviews = () => {
       <div className="reviews-section__row">
         <ReviewCard />
       </div>
-      <Link to="/reviews"><button>See more customer reviews</button></Link>
+      <div className="reviews-section-button-box"><Link to="/reviews"><button>See more customer reviews</button></Link></div>
     </div>
 
   );
