@@ -56,9 +56,9 @@
     justify-content: flex-end;
 
     .Search-bar {
-      width: 100%;
+      width: 50%;
       display: flex;
-      margin-right: 2rem;
+      margin-right: 5rem;
 
       input {
       border: none;
@@ -83,14 +83,36 @@
       }
     }
     .Shopping-icon-container {
-      border-radius: 50%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      // border: 1px red solid;
+      // border-radius: 50%;
       height: 2.3rem;
+      width: 30%;
+      text-decoration: none;
+      color: rgb(102, 100, 100);
 
 
 
     .Shopping-icon {
       width: 1.6rem;
       margin: .3rem;
+    }
+
+    .Shopping-counter{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: red;
+      border: 1px black solid;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+    }
+    .Shopping-counter-badge{
+      
+      color: black;
     }
   }
   }

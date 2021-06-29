@@ -30,6 +30,21 @@ function Nav() {
             className="Nav-menu"
           />
         </li>
+        <li className="Nav-item">
+          <NavLink activeClassName='Active-page' to='/terms'>
+            t&c
+          </NavLink>
+        </li>
+        <li className="Nav-item">
+          <NavLink activeClassName='Active-page' to='/privacy'>
+            privacy policy
+          </NavLink>
+        </li>
+        <li className="Nav-item">
+          <NavLink activeClassName='Active-page' to='/contact'>
+            contact
+          </NavLink>
+        </li>
       </ul>
     </div>
   )

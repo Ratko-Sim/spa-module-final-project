@@ -8,24 +8,41 @@ import { ProductListing } from './components/ShopComponent/ProductListing';
 import { ProductDetails } from './components/ShopComponent/ProductDetails';
 import ReviewsPage from "./components/Home/ReviewsComponent/ReviewsPage/ReviewsPage"
 import { AnimatePresence } from "framer-motion"
+import Info from './components/InfoComponent/Info';
 import Footer from "./components/Footer/Footer"
+import { DiscountedProducts15 } from "./components/ShopComponent/DiscountedProducts/DiscountedProducts15"
+import { DiscountedProduct15 } from "./components/ShopComponent/DiscountedProducts/DiscountedProduct15"
+import TermsAndConditions from "../src/components/OtherPages/TermsAndConditions"
+import PrivacyPolicy from "../src/components/OtherPages/PrivacyPolicy"
+import Contact from "../src/components/Contact/Contact"
+import { Cart } from './components/Cart/Cart';
 
 function App() {
 
   return (
     <div className="App">
       <Router>
-        <Header />
-        <AnimatePresence>
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/home" exact component={Home} />
-            <Route path="/productlisting" exact component={ProductListing} />
-            <Route path="/product/:productId" exact component={ProductDetails} />
-            <Route path="/notfound" exact component={NotFound} />
-            <Route path="/reviews" exact component={ReviewsPage} />
-          </Switch>
-        </AnimatePresence>
+        <main>
+          <Header />
+          <AnimatePresence>
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/home" exact component={Home} />
+              <Route path="/cart/" exact component={Cart} />
+              <Route path="/cart/:productId" exact component={Cart} />
+              <Route path="/productlisting" exact component={ProductListing} />
+              <Route path="/product/:productId" exact component={ProductDetails} />
+              <Route path="/notfound" exact component={NotFound} />
+              <Route path="/reviews" exact component={ReviewsPage} />
+              <Route path="/discount15" exact component={DiscountedProducts15} />
+              <Route path="/product15/:productId" exact component={DiscountedProduct15} />
+              <Route path="/terms" exact component={TermsAndConditions} />
+              <Route path="/privacy" exact component={PrivacyPolicy} />
+              <Route path="/contact" exact component={Contact} />
+            </Switch>
+          </AnimatePresence>
+        </main>
+        <Info />
         <Footer />
       </Router>
     </div>

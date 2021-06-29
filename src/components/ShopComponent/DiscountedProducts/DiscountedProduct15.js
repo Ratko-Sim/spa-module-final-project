@@ -1,28 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectedProducts, removeSelectedProducts } from '../../Redux/actions/productActions';
-import "./ProductDetails.scss";
-import paypal from "./paypal.png"
-import spin from "./Spinner-3.gif"
+import { selectedProducts, removeSelectedProducts } from '../../../Redux/actions/productActions';
+import "../ProductDetails.scss";
+import paypal from "../paypal.png"
+import spin from "../Spinner-3.gif"
 import { motion } from "framer-motion"
 import { IoChevronBack } from "react-icons/io5"
 import { useHistory } from "react-router-dom";
 
 
-export const ProductDetails = () => {
-
-
-  const product = useSelector((state) => state.product);
+export const DiscountedProduct15 = () => {
+  const product = useSelector((state) => state.product)
   const { image, title, price, description } = product;
   const { productId } = useParams();
-  const [qty, setQty] = useState(1)
   const dispatch = useDispatch();
 
   let history = useHistory();
   const handleClick = () => {
-    history.push("/productlisting")
+    history.push("/discount15")
   }
 
   const fetchProductDetails = async () => {
@@ -39,10 +36,6 @@ export const ProductDetails = () => {
       dispatch(removeSelectedProducts());
     }
   }, [productId])
-
-  const addToCartHandler = () => {
-    history.push(`/cart/${productId}?qty=${qty}`)
-  }
   return (
     <div>
       {
@@ -63,34 +56,10 @@ export const ProductDetails = () => {
               </div>
               <div className="Details-content-wrapper">
                 <div className="Details-title">{title}</div>
-                <div className="Details-price">€ {price}</div>
+                <div className="Details-price-original">€ {price}</div>
+                <div className="Details-price-discounted">€ {Math.floor(price - (0.15 * price)) + ".99"}</div>
                 <div className="Details-description">{description}</div>
-                <button onClick={addToCartHandler} className="Details-button">Add to Cart</button>
-                <li>
-                  <div>Qty</div>
-                  <div>
-                    <select value={qty} onChange={e => setQty(e.target.value)}>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-
-                      {/* {
-                        [...Array(product).keys()].map((x) => (
-                          <option key={x + 1} value={x + 1}>
-                            {x + 1}
-                          </option>
-                        ))
-                      } */}
-                    </select>
-                  </div>
-                </li>
+                <button className="Details-button">Add to Cart</button>
                 <div className="Details-buyNow">
                   <div>Buy now with</div>
                   <img src={paypal} alt="paypal" />

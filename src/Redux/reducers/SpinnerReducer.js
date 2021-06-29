@@ -1,8 +1,10 @@
+import { SpinnerType } from "../action-types/actionTypes";
+
 export const SpinnerReducer = (state = false, action) => {
   switch (action.type) {
-    case "SHOW_SPINNER":
+    case SpinnerType.SHOW_SPINNER:
       return true;
-    case "SHOW_PRODUCTS":
+    case SpinnerType.SHOW_PRODUCTS:
       return false;
     default:
       return state;
