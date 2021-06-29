@@ -3,7 +3,6 @@ import CustomerServiceComp from "../CustomerServiceComp"
 import "./Vouchers.scss"
 import { motion } from "framer-motion"
 
-
 function Vouchers() {
   return (
     <motion.div className="Vouchers"
@@ -18,12 +17,15 @@ function Vouchers() {
               <h2>Looking for a gift?</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, praesentium sed cupiditate odio repellat delectus labore ipsum iste, modi nostrum impedit quaerat aliquid quis voluptate officia magni commodi.</p>
               <button>gift a voucher</button>
+
+            </div>
+            <div className="image">
             </div>
           </div>
           <div className="Vouchers-left-bottom">
             <h4>Transfer vouchers to account</h4>
             <div className="Vouchers-left-bottom-wrap">
-              <input type="text" />
+              <input type="text" placeholder="Voucher code" />
               <button>Transfer</button>
             </div>
           </div>

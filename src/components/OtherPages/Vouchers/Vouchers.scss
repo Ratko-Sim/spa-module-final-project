@@ -25,13 +25,27 @@
     }
     .Vouchers-left-top {
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.612);
+      background-color: rgba(0, 0, 0, 0.543);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
       padding: 3rem 2rem;
       margin-bottom: 1rem;
+      position: relative;
+
+      .image {
+        position: absolute;
+        height: 25rem;
+        width: 25rem;
+        left: 3%;
+        z-index: -1;
+        background-image: url("./gift-voucher.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+      }
       @media only screen and (max-width: 900px) {
         align-items: center;
 
@@ -70,8 +84,7 @@
         transition: .3s;
         margin: 1rem;
         &:hover {
-          color: black;
-          background-color: white;
+          background-color: rgba(0, 0, 0, 0.297);
         }
       }
     }
@@ -120,6 +133,7 @@
       background-color: rgb(241, 241, 241);
       border: .1rem solid rgb(206, 206, 206) ;
       margin: 1rem;
+      padding-left: 1rem;
 
     }
     button {
@@ -135,8 +149,7 @@
       transition: .3s;
       margin: 1rem;
         &:hover {
-          color: black;
-          background-color: white;
+          background-color: rgba(0, 0, 0, 0.509);
         }
     }
   }

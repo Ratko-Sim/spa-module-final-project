@@ -32,20 +32,22 @@
     width: 9rem;
     height: 9rem;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: top left;
   }
 
   .title {
     text-transform: capitalize;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     
   }
   .role {
     color: gray;
-    font-size: .8rem;
+    font-size: .85rem;
     margin-top: -1.4rem;
-    letter-spacing: .15rem;
+    letter-spacing: .1rem;
     text-align: center;    
-    width: 90%;
+    width: 80%;
 
   }
   .email {
