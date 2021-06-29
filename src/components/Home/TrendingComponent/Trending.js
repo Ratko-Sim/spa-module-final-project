@@ -28,6 +28,7 @@ const Trending = () => {
 
   useEffect(() => {
     fetchProducts();
+    // eslint-disable-next-line
   }, []);
 
   return (

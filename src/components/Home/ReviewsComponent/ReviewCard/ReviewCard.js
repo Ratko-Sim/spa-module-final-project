@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useSelector } from "react-redux";
 import "./ReviewCard.scss";
@@ -9,21 +10,9 @@ const ReviewCard = () => {
     return (
       <div key={review.id.value} className="reviews-section__col">
         <div className="review-card">
-
-          <img src={review.picture.large} alt="Customers" />
-          <div className="name">{`${review.name.first} ${review.name.last}`}</div>
-          <div className="location">{review.location.country}</div>
-          <div className="stars">
-            <i className="fas fa-star"></i>
-            <i className="fas fa-star"></i>
-            <i className="fas fa-star"></i>
-            <i className="fas fa-star"></i>
-            <i className="fas fa-star"></i>
-          </div>
-          <p>Lorem Ipsum is simply dummy text of the printing industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
           <div className="review-card-flex-container">
             <div className="review-card-img-box">
-              <img src={review.picture.large} alt="Customers-image" />
+              <img src={review.picture.large} alt="Customers" />
             </div>
             <div className="review-card-user">
               <div className="name">{`${review.name.first} ${review.name.last}`}</div>
