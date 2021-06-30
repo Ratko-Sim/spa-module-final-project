@@ -1,9 +1,14 @@
-import React from 'react'
-import "./Contact.scss"
-import { motion } from "framer-motion"
-import Form from "./Form"
+import React, {useEffect} from 'react';
+import "./Contact.scss";
+import { motion } from "framer-motion";
+import Form from "./Form";
+
 function Contact() {
-  return (
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  return (   
     <motion.div className="Contact"
       exit={{ opacity: 0 }}
       animate={{ opacity: 1 }}
