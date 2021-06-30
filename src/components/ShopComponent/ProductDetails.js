@@ -12,8 +12,6 @@ import { useHistory } from "react-router-dom";
 
 
 export const ProductDetails = () => {
-
-
   const product = useSelector((state) => state.product);
   const { image, title, price, description } = product;
   const { productId } = useParams();
@@ -21,7 +19,6 @@ export const ProductDetails = () => {
   console.log("This is the  Qty from useState ===>", qty)
 
   const dispatch = useDispatch();
-
   let history = useHistory();
 
   const fetchProductDetails = async () => {
