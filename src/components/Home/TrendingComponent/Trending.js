@@ -33,7 +33,6 @@ const Trending = () => {
   return (
     <div className="trending-section">
       <h1>Trending Products</h1>
-      <div className="title-underline"></div>
       <div className="trending-section-wrapper">
         {products.map((product, i) => (
             <TrendingProductComponent
