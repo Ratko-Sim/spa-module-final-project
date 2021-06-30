@@ -88,7 +88,7 @@ export const ProductDetails = () => {
                   </select>
 
                 </div>
-                {console.log("QTYQTY", qty)}
+
                 <button onClick={addToCartHandler} className="Details-button">Add to Cart</button>
                 <div className="Details-buyNow">
                   <div>Buy now with</div>
