@@ -15,7 +15,7 @@ export const ProductDetails = () => {
   const product = useSelector((state) => state.product);
   const { image, title, price, description } = product;
   const { productId } = useParams();
-  const [qty, setQty] = useState("")
+  const [qty, setQty] = useState(1)
   console.log("This is the  Qty from useState ===>", qty)
 
   const dispatch = useDispatch();

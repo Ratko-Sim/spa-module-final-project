@@ -20,7 +20,7 @@ import OurTeam from "./components/OtherPages/OurTeam/OurTeam"
 import Returns from "./components/OtherPages/T&C/Returns"
 import Shipping from "./components/OtherPages/Shipping/Shipping"
 import Vouchers from './components/OtherPages/Vouchers/Vouchers';
-import { OutOfStuck } from './components/OtherPages/OutOfStuck/OutOfStuck';
+import { OutOfStock } from './components/OtherPages/OutOfStock/OutOfStock';
 import Checkout from './components/Cart/Checkout';
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
               <Route path="/home" exact component={Home} />
               <Route path="/cart/" exact component={Cart} />
               <Route path="/cart/:productId" exact component={Cart} />
-              <Route path="/outofstuck/" exact component={OutOfStuck} />
+              <Route path="/outofstuck/" exact component={OutOfStock} />
               <Route path="/productlisting" exact component={ProductListing} />
               <Route path="/product/:productId" exact component={ProductDetails} />
               <Route path="/notfound" exact component={NotFound} />

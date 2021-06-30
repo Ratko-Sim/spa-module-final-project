@@ -70,8 +70,6 @@ export const Cart = () => {
         <button onClick={checkoutHandler} disabled={cartItems.length === 0}>proceed to checkout</button>
       </div>
       {cartItems.length === 0 ? <MessageBox />
-
-
         :
         (
           <div className="cart-wrapper">
