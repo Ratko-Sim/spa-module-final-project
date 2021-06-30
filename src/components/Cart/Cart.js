@@ -117,7 +117,7 @@ export const Cart = () => {
               }
             </div>
             <div className="cart-order-summary">
-              <h2>order summary</h2>
+              <h3 className="order-title">order summary</h3>
               <div className="total-price">
                 <h3>Total price: </h3>
                 <span className="price-amount">€ {price}</span>
