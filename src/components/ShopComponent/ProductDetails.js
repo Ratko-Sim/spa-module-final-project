@@ -11,12 +11,13 @@ import { IoChevronBack } from "react-icons/io5"
 import { useHistory } from "react-router-dom";
 
 
+
 export const ProductDetails = () => {
   const product = useSelector((state) => state.product);
   const { image, title, price, description } = product;
   const { productId } = useParams();
   const [qty, setQty] = useState(1)
-  console.log("This is the  Qty from useState ===>", qty)
+
 
   const dispatch = useDispatch();
   let history = useHistory();
@@ -89,7 +90,7 @@ export const ProductDetails = () => {
                   </select>
 
                 </div>
-                {console.log("QTYQTY", qty)}
+
                 <button onClick={addToCartHandler} className="Details-button">Add to Cart</button>
                 <div className="Details-buyNow">
                   <div>Buy now with</div>

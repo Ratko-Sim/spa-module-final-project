@@ -4,8 +4,7 @@ export const ActionTypes = {
   REMOVE_SELECTED_PRODUCT: "REMOVE_SELECTED_PRODUCT",
   ADD_TO_CART: 'ADD_TO_CART',
   REMOVE_FROM_CART: 'REMOVE_FROM_CART',
-  // ADJUST_QUANTITY: 'ADJUST_QUANTITY',
-  // LOAD_CURRENT_ITEM: "LOAD_CURRENT_ITEM",
+  FILTER_PRODUCT_BY_CATEGORY: 'FILTER_PRODUCT_BY_CATEGORY'
 };
 
 export const SpinnerType = {
@@ -26,6 +25,6 @@ export const DeliveryTimeType = {
 }
 
 export const ReviewType = {
-  SET_REVIEWS : "SET_REVIEWS",
-}; 
+  SET_REVIEWS: "SET_REVIEWS",
+};
 

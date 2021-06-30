@@ -17,6 +17,7 @@ export const addToCart = (productId, qty) =>
         price: data.price,
         description: data.description,
         product: data.id,
+        gategory: data.category,
         qty,
       },
     });
@@ -31,3 +32,5 @@ export const removeFromCart = (productId) => (dispatch, getState) => {
   });
   localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
 }
+
+
