@@ -47,7 +47,7 @@ function Nav() {
         </li>
         <li className="Nav-item">
           <NavLink activeClassName='Active-page' to='/terms'>
-            t&c
+            TERMS OF SERVICE
           </NavLink>
         </li>
         <li className="Nav-item">

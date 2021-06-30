@@ -12,14 +12,11 @@ import { useHistory } from "react-router-dom";
 
 
 export const ProductDetails = () => {
-
-
   const product = useSelector((state) => state.product);
   const { image, title, price, description } = product;
   const { productId } = useParams();
   const [qty, setQty] = useState(1)
   const dispatch = useDispatch();
-
   let history = useHistory();
 
   const fetchProductDetails = async () => {

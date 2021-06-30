@@ -5,6 +5,7 @@ import arheraIcon from "./arhera-icon.png"
 import shoppingCart from "./shopping-cart.png"
 import searchIcon from "./search-icon.png"
 import { useSelector } from 'react-redux';
+import { RiShoppingBag3Line } from "react-icons/ri"
 
 function Logo() {
   const cart = useSelector((state) => state.cart);
@@ -31,8 +32,7 @@ function Logo() {
           </div>
 
           <Link to="/cart" className="Shopping-icon-container">
-            <h3 className="Shopping-title">My Cart</h3>
-            <img className="Shopping-icon" src={shoppingCart} alt="" />
+            <RiShoppingBag3Line className="Shopping-icon" />
             <div className="Shopping-counter">{cartItems.length > 0 && (<span className="Shopping-counter-badge">{cartItems.length}</span>)}</div>
           </Link>
 

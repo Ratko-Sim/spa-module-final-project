@@ -1,17 +1,10 @@
 
 import { ActionTypes } from "../action-types/actionTypes";
 
-
-
-
-
-
-
 export const cartReducer = (state = { cartItems: [] }, action) => {
   switch (action.type) {
     case ActionTypes.ADD_TO_CART:
       const item = action.payload;
-      console.log("sdddsda", item)
       const existItem = state.cartItems.find((x) => x.name === item.name);
       if (existItem) {
         return {

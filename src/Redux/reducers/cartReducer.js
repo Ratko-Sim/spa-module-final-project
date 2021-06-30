@@ -1,12 +1,6 @@
 
 import { ActionTypes } from "../action-types/actionTypes";
 
-
-
-
-
-
-
 export const cartReducer = (state = { cartItems: [] }, action) => {
 
   switch (action.type) {

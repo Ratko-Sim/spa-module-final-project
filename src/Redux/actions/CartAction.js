@@ -7,7 +7,6 @@ import { ActionTypes } from "../action-types/actionTypes"
 export const addToCart = (productId, qty) =>
   async (dispatch, getState) => {
     const { data } = await axios.get(`https://fakestoreapi.com/products/${productId}`)
-    console.log(data)
       ;
 
     dispatch({
