@@ -6,12 +6,11 @@ import { TrendingProductComponent } from "./TrendingProductComponent";
 import "./Trending.scss";
 
 //// All this is for Swiper ////
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper.min.css";
-import "swiper/components/pagination/pagination.min.css";
-import "swiper/components/navigation/navigation.min.css";
-import SwiperCore, { Pagination, Navigation } from "swiper/core";
-SwiperCore.use([Pagination, Navigation]);
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/swiper.min.css";
+// import "swiper/components/scrollbar/scrollbar.min.css";
+// import SwiperCore, { Scrollbar, Mousewheel } from "swiper/core";
+// SwiperCore.use([Scrollbar, Mousewheel]);
 
 const Trending = () => {
   const dispatch = useDispatch();
@@ -35,47 +34,18 @@ const Trending = () => {
     <div className="trending-section">
       <h1>Trending Products</h1>
       <div className="title-underline"></div>
-      <Swiper
-        style={{
-          "--swiper-navigation-color": "black",
-          "--swiper-pagination-color": "#515054",
-        }}
-        slidesPerView={5}
-        spaceBetween={5}
-        slidesPerGroup={1}
-        loop={false}
-        loopFillGroupWithBlank={true}
-        breakpoints={{
-          "@0.00": {
-            slidesPerView: 1,
-          },
-          "@0.50": {
-            slidesPerView: 2,
-          },
-          "@0.90": {
-            slidesPerView: 3,
-          },
-          "@1.25": {
-            slidesPerView: 4,
-          },
-          "@1.50": {
-            slidesPerView: 5,
-          },
-        }}
-        navigation={true}
-        className="mySwiper"
-      >
+      <div className="trending-section-wrapper">
         {products.map((product, i) => (
-          <SwiperSlide key={i} className="swiper-slide">
             <TrendingProductComponent
+              key={product.id}
               id={product.id}
-              title={product.title}
               image={product.image}
+              title={product.title}
+              category={product.category}
               price={product.price}
             />
-          </SwiperSlide>
         ))}
-      </Swiper>
+      </div>
     </div>
   );
 };
