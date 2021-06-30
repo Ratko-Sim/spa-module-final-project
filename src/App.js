@@ -36,7 +36,7 @@ function App() {
               <Route path="/home" exact component={Home} />
               <Route path="/cart/" exact component={Cart} />
               <Route path="/cart/:productId" exact component={Cart} />
-              <Route path="/outofstuck/" exact component={OutOfStock} />
+              <Route path="/outofstock/" exact component={OutOfStock} />
               <Route path="/productlisting" exact component={ProductListing} />
               <Route path="/product/:productId" exact component={ProductDetails} />
               <Route path="/notfound" exact component={NotFound} />
