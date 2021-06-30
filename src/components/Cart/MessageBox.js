@@ -2,9 +2,7 @@ import React from 'react';
 import "./Cart.scss"
 import { useHistory } from "react-router-dom";
 
-
-
-export default function MessageBox(props) {
+export default function MessageBox() {
   let history = useHistory()
   const backToShop = () => {
     history.push(`/ProductListing`)
