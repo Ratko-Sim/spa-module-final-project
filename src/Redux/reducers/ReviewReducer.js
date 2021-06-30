@@ -1,4 +1,4 @@
-import { ReviewActionTypes } from "../action-types/ReviewActionTypes";
+import { ReviewType } from "../action-types/actionTypes";
 
 const initialState = {
   reviews: [],
@@ -6,7 +6,7 @@ const initialState = {
 
 export const ReviewReducer = (state = initialState, {type, payload}) => {
   switch (type) {
-    case ReviewActionTypes.SET_REVIEWS:
+    case ReviewType.SET_REVIEWS:
       return { ...state, reviews: payload};
     default:
       return state;

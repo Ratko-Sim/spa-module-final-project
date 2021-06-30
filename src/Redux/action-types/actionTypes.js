@@ -25,3 +25,7 @@ export const DeliveryTimeType = {
   SET_DELIVERY: "SET_DELIVERY"
 }
 
+export const ReviewType = {
+  SET_REVIEWS : "SET_REVIEWS",
+}; 
+
