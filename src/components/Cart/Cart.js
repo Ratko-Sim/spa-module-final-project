@@ -4,10 +4,10 @@ import { useParams, useLocation, Link } from "react-router-dom";
 import { addToCart, removeFromCart } from '../../Redux/actions/CartAction';
 import MessageBox from './MessageBox';
 import "./Cart.scss";
-import { IoIosArrowDropleftCircle } from "react-icons/io"
-import { MdDeleteForever } from "react-icons/md"
+import { IoIosArrowDropleftCircle } from "react-icons/io";
+import { MdDeleteForever } from "react-icons/md";
 import { useHistory } from "react-router-dom";
-
+import { motion } from "framer-motion";
 
 export const Cart = () => {
   const location = useLocation();
@@ -46,6 +46,10 @@ export const Cart = () => {
   const rounded = Number(roundedString);
 
   return (
+    <motion.div 
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}>
     <div className={"cart-container"}>
 
       <div className="cart-top-navigation">
@@ -139,6 +143,7 @@ export const Cart = () => {
           </div>
         )}
     </div>
+    </motion.div>
   )
 }
 

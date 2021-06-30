@@ -1,26 +1,25 @@
 .trending-section {
-  text-align: center;
-  margin: 2rem 0 3.5rem 0;
+  margin: 5rem 0;
 
-  h1 {
-    font-size: 1.4rem;
-    background-color: whitesmoke;
-    padding: 0.7rem;
-  }
-  .title-underline {
-    width: 10.625rem;
-    height: 0.2rem;
-    background: rgb(198, 28, 22);
-    background: linear-gradient(
-      90deg,
-      rgba(198, 28, 22, 1) 22%,
-      rgba(245, 171, 1, 1) 65%,
-      rgba(43, 145, 245, 1) 87%
-    );
-    margin: 1.2rem auto 2rem auto;
+    h1 {
+      font-size: 1.3rem;
+      color: black;
+      text-align: center;
+      padding: 0.5rem 0; 
+      background-color: #F3F3F3;
+      color: black;
+    }
+  
+  .trending-section-wrapper {
+    display: flex;
+    overflow-x: auto;
   }
   a {
     text-decoration: none;
     color: black;
   }
 }
+
+
+ 
+

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
@@ -36,7 +36,7 @@ export const DiscountedProduct15 = () => {
   }, [productId])
 
   const addToCartHandler = () => {
-    history.push(`/outofstuck/`)
+    history.push(`/outofstock/`)
   }
   return (
     <div>

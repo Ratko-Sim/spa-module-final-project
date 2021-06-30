@@ -1,8 +1,8 @@
-import { ReviewActionTypes } from "../action-types/ReviewActionTypes";
+import { ReviewType } from "../action-types/actionTypes";
 
 export const setReviews = (reviews) => {
     return {
-        type: ReviewActionTypes.SET_REVIEWS, 
+        type: ReviewType.SET_REVIEWS, 
         payload: reviews,
     };
 };

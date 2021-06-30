@@ -1,39 +1,45 @@
-// * {
-//   outline: 1px solid red;
-// }
 
 .trending-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  height: 18rem;
-  padding: 1rem;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin: 1rem 0.1rem;
+  width: 13rem;
+  margin: 2.5rem 0.3rem;
   position: relative;
   top: 0;
   transition: top ease 0.2s;
-
   &:hover {
     top: -7px;
   }
-
+  
   .trending-card-image {
+    box-shadow: rgba(0, 0, 0, 0.308) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 2rem 0;
+    text-align: center;
     img {
       object-fit: contain;
       height: 8rem;
       width: 8rem;
     }
   }
+  .trending-card-category {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 0.8rem;
+    padding-top: 0.8rem; 
+  }
+
   .trending-card-title {
     font-size: 0.9rem;
     font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 0.3rem; 
   }
 
   .trending-card-price {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding-top: 0.3rem; 
   }
 }
