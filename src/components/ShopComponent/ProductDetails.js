@@ -17,7 +17,9 @@ export const ProductDetails = () => {
   const product = useSelector((state) => state.product);
   const { image, title, price, description } = product;
   const { productId } = useParams();
-  const [qty, setQty] = useState(1)
+  const [qty, setQty] = useState("")
+  console.log("This is the  Qty from useState ===>", qty)
+
   const dispatch = useDispatch();
 
   let history = useHistory();
@@ -66,6 +68,7 @@ export const ProductDetails = () => {
                 <div className="Details-quantity">
                   <span>quantity</span>
                   <select value={qty} onChange={e => setQty(e.target.value)}>
+                    <option disabled selected value="">---</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -77,15 +80,18 @@ export const ProductDetails = () => {
                     <option value="9">9</option>
                     <option value="10">10</option>
 
+
                     {/* {
-                        [...Array(product).keys()].map((x) => (
-                          <option key={x + 1} value={x + 1}>
-                            {x + 1}
-                          </option>
-                        ))
-                      } */}
+                      [...Array(product).keys()].map((x) => (
+                        <option key={x + 1} value={x + 1}>
+                          {x + 1}
+                        </option>
+                      ))
+                    } */}
                   </select>
+
                 </div>
+                {console.log("QTYQTY", qty)}
                 <button onClick={addToCartHandler} className="Details-button">Add to Cart</button>
                 <div className="Details-buyNow">
                   <div>Buy now with</div>

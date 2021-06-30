@@ -14,6 +14,8 @@ export const Cart = () => {
 
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
+  console.log("This is the cart", cart)
+  console.log("This is the cartItems", cartItems)
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -55,7 +57,8 @@ export const Cart = () => {
                     </div>
                     <div className="price-wrap">
                       <div className="option">
-                        <select className="select" value={item.qty} onChange={e => dispatch(addToCart(item.product, Number(e.target.value)))}>
+                        <select value={item.qty} onChange={e => dispatch(addToCart(item.product, Number(e.target.value)))} className="select">
+
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -72,6 +75,7 @@ export const Cart = () => {
                             </option>
                           ))} */}
                         </select>
+
                       </div>
                       <div className="price">€{item.price}</div>
                       <div className="btn">
