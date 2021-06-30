@@ -15,6 +15,8 @@ export const Cart = () => {
   const qty = location.search ? Number(location.search.split('=')[1]) : 1;
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
+  console.log("This is the cart", cart)
+  console.log("This is the cartItems", cartItems)
   const dispatch = useDispatch();
   let history = useHistory();
 
@@ -85,11 +87,9 @@ export const Cart = () => {
                       </div>
                       <div className="cart-content-wrap">
                         <Link to={`/product/${item.product}`}>{item.name}</Link>
-
                         <div className="option">
                           <span>quantity</span>
                           <select className="select" value={item.qty} onChange={e => dispatch(addToCart(item.product, Number(e.target.value)))}>
-                            <option>select</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -100,11 +100,6 @@ export const Cart = () => {
                             <option value="8">8</option>
                             <option value="9">9</option>
                             <option value="10">10</option>
-                            {/* {[...Array(item.product).keys()].map((x) => (
-                            <option key={x + 1} value={x + 1}>
-                              {x + 1}
-                            </option>
-                          ))} */}
                           </select>
                         </div>
                         <div className="price">

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
@@ -34,6 +34,10 @@ export const DiscountedProduct15 = () => {
     }
     // eslint-disable-next-line
   }, [productId])
+
+  const addToCartHandler = () => {
+    history.push(`/outofstuck/`)
+  }
   return (
     <div>
       {
@@ -57,7 +61,24 @@ export const DiscountedProduct15 = () => {
                 <div className="Details-price-original">€ {price}</div>
                 <div className="Details-price-discounted">€ {Math.floor(price - (0.15 * price)) + ".99"}</div>
                 <div className="Details-description">{description}</div>
-                <button className="Details-button">Add to Cart</button>
+                <div className="Details-quantity">
+                  <span>quantity</span>
+                  <select onChange="">
+                    <option disabled selected value="">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+
+                </div>
+                <button onClick={addToCartHandler} className="Details-button">Add to Cart</button>
                 <div className="Details-buyNow">
                   <div>Buy now with</div>
                   <img src={paypal} alt="paypal" />
