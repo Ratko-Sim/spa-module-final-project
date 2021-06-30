@@ -1,9 +1,9 @@
 import React from 'react'
-import "./OutOfStuck.scss";
+import "./OutOfStock.scss";
 
-export const OutOfStuck = () => {
+export const OutOfStock = () => {
   return (
-    <div>
+    <div className="OutOfStock">
       <h2> This item currently is out of stock</h2>
     </div>
   )
