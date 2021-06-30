@@ -20,6 +20,7 @@ import OurTeam from "./components/OtherPages/OurTeam/OurTeam"
 import Returns from "./components/OtherPages/T&C/Returns"
 import Shipping from "./components/OtherPages/Shipping/Shipping"
 import Vouchers from './components/OtherPages/Vouchers/Vouchers';
+import Checkout from './components/Cart/Checkout';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
               <Route path="/returns" exact component={Returns} />
               <Route path="/shipping" exact component={Shipping} />
               <Route path="/vouchers" exact component={Vouchers} />
+              <Route path="/checkout" exact component={Checkout} />
             </Switch>
           </AnimatePresence>
         </main>

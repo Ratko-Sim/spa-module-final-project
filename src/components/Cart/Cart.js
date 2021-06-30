@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams, useLocation, Link } from "react-router-dom";
 import { addToCart, removeFromCart } from '../../Redux/actions/CartAction';
-import MessageBox from '../MessageBox';
+import MessageBox from './MessageBox';
 import "./Cart.scss";
 import { IoIosArrowDropleftCircle } from "react-icons/io"
 import { MdDeleteForever } from "react-icons/md"
@@ -29,12 +29,13 @@ export const Cart = () => {
   };
 
   const checkoutHandler = () => {
-    // history.push('/signin?redirect=shipping')
+    history.push('/checkout')
   }
 
   const backToShopHandler = () => {
     history.push(`/productlisting`)
   }
+
 
   const price = cartItems.reduce((a, c) => a + c.price * c.qty, 0)
   const priceVat = (price - (0.81 * price))
@@ -55,7 +56,7 @@ export const Cart = () => {
         <div className="middle-line"></div>
         <div>cart</div>
         <div className="middle-line"></div>
-        <div >checkout</div>
+        <div>checkout</div>
       </div>
       <div className="cart-top-navigation-mobile">
         <div className="back-to-shop">
@@ -64,11 +65,11 @@ export const Cart = () => {
           </div>
           <div>continue shopping</div>
         </div>
-        <button>proceed to checkout</button>
+        <button onClick={checkoutHandler} disabled={cartItems.length === 0}>proceed to checkout</button>
       </div>
-      {cartItems.length === 0 ? <MessageBox>
-        Cart is empty. <Link to="/">Go Shopping</Link>
-      </MessageBox>
+      {cartItems.length === 0 ? <MessageBox />
+
+
         :
         (
           <div className="cart-wrapper">
