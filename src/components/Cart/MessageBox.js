@@ -11,7 +11,7 @@ export default function MessageBox(props) {
   }
   return (
     <div className="MessageBox">
-      <h2>Your shopping cart is empty.</h2>
+      <h3>Your shopping cart is empty.</h3>
       <button onClick={backToShop}>Back to shop</button>
     </div>
   );
