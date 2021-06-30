@@ -85,38 +85,35 @@
           margin-top: .1rem;
         }
       }
+      @media only screen and (max-width: 700px) {
+        display: none;
+      }
     }
     .Shopping-icon-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      // border: 1px red solid;
-      // border-radius: 50%;
-      height: 2.3rem;
-      width: 30%;
       text-decoration: none;
-      color: rgb(102, 100, 100);
-
-
+      position: relative;
 
     .Shopping-icon {
       width: 1.6rem;
-      margin: .3rem;
+      font-size: 2rem;
+      width: 1.9rem;
+      color: black;
     }
 
     .Shopping-counter{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: red;
-      border: 1px black solid;
+      width: 1rem;
+      text-align: center;
+      font-size: .8rem;
+      font-weight: 600;
       border-radius: 50%;
-      width: 2rem;
-      height: 2rem;
+      position: absolute;
+      top:1.2rem ;
+      left: 1.1rem;
+      background-color: red;
+      border-radius: 50%;
     }
     .Shopping-counter-badge{
-      
-      color: black;
+      color: rgb(255, 255, 255);
     }
   }
   }

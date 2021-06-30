@@ -9,7 +9,6 @@ export const ProductComponent = () => {
   const renderList = products.map((products) => {
 
     const { id, title, image, price } = products;
-
     return (
       <div className="Card" key={id}>
         <Link to={`/product/${id}`}  >
