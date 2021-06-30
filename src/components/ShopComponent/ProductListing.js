@@ -31,6 +31,7 @@ export const ProductListing = () => {
   useEffect(() => {
     fetchProducts();
     // eslint-disable-next-line
+    window.scrollTo(0, 0);
   }, []);
 
   return (

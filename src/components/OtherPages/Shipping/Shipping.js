@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import ShippingTable from './ShippingTable'
 import "./Shipping.scss"
 import { motion } from "framer-motion"
 
 function Shipping() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <motion.div
       exit={{ opacity: 0 }}

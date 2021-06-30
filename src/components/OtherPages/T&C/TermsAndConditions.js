@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./TermsAndPrivacy.scss"
 import { motion } from "framer-motion"
 
 
 function TermsAndConditions() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <motion.div
       exit={{ opacity: 0 }}
