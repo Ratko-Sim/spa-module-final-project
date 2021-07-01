@@ -17,6 +17,7 @@ export const addToCart = (productId, qty) =>
         price: data.price,
         description: data.description,
         product: data.id,
+        gategory: data.category,
         qty,
       },
     });
@@ -33,10 +34,3 @@ export const removeFromCart = (productId) => (dispatch, getState) => {
 }
 
 
-
-
-// export const filterProducts = (produts, category) => (dispatch) => {
-//   return dispatch({
-
-//   })
-// }
