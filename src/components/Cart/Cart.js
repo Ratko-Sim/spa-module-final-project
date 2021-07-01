@@ -38,7 +38,6 @@ export const Cart = () => {
     history.push(`/productlisting`)
   }
 
-
   const price = cartItems.reduce((a, c) => a + c.price * c.qty, 0)
   const priceVat = (price - (0.81 * price))
   const num = Number(priceVat)
