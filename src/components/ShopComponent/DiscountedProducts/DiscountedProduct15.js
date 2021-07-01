@@ -67,7 +67,7 @@ export const DiscountedProduct15 = () => {
               <div className="Details-title">{title}</div>
               <div className="Details-price-original">€ {price}</div>
               <div className="Details-price-discounted">
-                € {Math.floor(price - 0.15 * price) + ".99"}
+                € {(price - 0.15 * price).toFixed(2)}
               </div>
               <div className="Details-description">{description}</div>
               <div className="Details-quantity">
