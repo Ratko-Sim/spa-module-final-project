@@ -15,7 +15,7 @@ import { Filter } from '../Filter/Filter'
 
 export const ProductListing = () => {
   const spinnerLoading = useSelector((state) => state.spinner)
-  const products = useSelector((state) => state.allProducts.filteredItems)
+  // const products = useSelector((state) => state.allProducts.filteredItems)
   const dispatch = useDispatch()
 
   let history = useHistory();

@@ -6,7 +6,8 @@ import "./ProductComponent.scss";
 
 
 export const ProductComponent = () => {
-  const products = useSelector((state) => state.allProducts.products)
+  // const products = useSelector((state) => state.allProducts.products)
+  const products = useSelector((state) => state.allProducts.filteredItems)
 
 
   const renderList = products.map((products) => {
