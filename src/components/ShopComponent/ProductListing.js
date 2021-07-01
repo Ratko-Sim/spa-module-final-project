@@ -27,6 +27,7 @@ export const ProductListing = () => {
       .catch(err => {
         console.error(err);
       });
+    // console.log(response.data.map((x) => x.category))
     dispatch(setProducts(response.data));
 
     dispatch(showProducts());

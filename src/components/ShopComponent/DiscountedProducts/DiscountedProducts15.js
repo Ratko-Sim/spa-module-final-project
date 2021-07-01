@@ -62,7 +62,7 @@ export const DiscountedProducts15 = () => {
                     <div className="card-title">{title}</div>
                     <div>
                       <div className="card-price-original">€ {price}</div>
-                      <div className="card-price-discounted">€ {Math.floor(price - (0.15 * price)) + ".99"}</div>
+                      <div className="card-price-discounted">€ {(price - 0.15 * price).toFixed(2)}</div>
                     </div>
                   </Link>
                 </div>

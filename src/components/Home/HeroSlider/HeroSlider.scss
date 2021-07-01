@@ -39,8 +39,8 @@
   }
 
   button {
-    width: 7.5rem;
-    height: 2.7rem;
+    width: 9rem;
+    height: 3rem;
     border: none;
     text-transform: uppercase;
     color: white;
@@ -48,14 +48,9 @@
     transition: .3s ease-in-out;
     margin-top: 1rem;
     cursor: pointer;
-    background-color: rgb(255, 62, 62);
+    background-color: rgb(18, 18, 18);
     font-size: 1.05rem;
 
-    &:hover {
-      background-color: white;
-      color: rgb(255, 62, 62);
-
-    }
   }
 }
 

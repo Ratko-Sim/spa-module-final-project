@@ -68,6 +68,7 @@
       @media only screen and (max-width: 610px) {
         .back-to-shop {
           font-size: 1rem;
+          cursor: pointer;
           .cart-arrow {
             font-size: 2rem;
             line-height: .5rem;
@@ -263,8 +264,6 @@
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
-
-
   }
 }
 

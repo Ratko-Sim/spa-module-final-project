@@ -13,7 +13,7 @@
 
 .Sidebar-item {
   list-style: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s;
@@ -36,8 +36,15 @@
 }
 
 #show-sidebar {
-  transform: translateX(40vw);
+  transform: translateX(60vw);
   transition: .4s;
+
+  @media only screen and (max-width: 700px) {
+    transform: translateX(50vw);
+  }
+  @media only screen and (max-width: 400px) {
+    transform: translateX(35vw);
+  }
 }
 #hide-sidebar {
   transform: translateX(100vw);
@@ -53,7 +60,7 @@
   color: rgb(74, 74, 74);
   cursor: pointer;
   position: fixed;
-  top: -4.7rem;
+  top: -5.5rem;
   left: 0rem;
   position: absolute;
 

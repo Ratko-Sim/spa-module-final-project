@@ -36,11 +36,11 @@
   padding: 3rem;
 
   .Deals-label {
-    background-color: rgb(255, 132, 118);
+    background-color: rgb(255, 255, 255);
     width: 8rem;
     text-align: center;
     padding: .3rem;
-    color: white;
+    color: rgb(4, 4, 4);
     font-weight: 600;
     text-transform: uppercase;
     font-size: .95rem;
@@ -48,14 +48,14 @@
 
   .Deals-title {
     margin-top: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.3rem;
     text-transform: uppercase;
     color: white;
   }
 
   .Deals-title2 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.3rem;
     text-transform: uppercase;
     color: white;
@@ -70,9 +70,9 @@
 
   .Deals-button {
     width: 7rem;
-    height: 2.2rem;
+    padding: .4rem;
     border: none;
-    background-color: rgb(255, 62, 62);
+    background-color: rgb(19, 19, 19);
     color: white;
     font-size: .9rem;
     text-transform: uppercase;
@@ -80,11 +80,6 @@
     margin-top: 1rem;
     cursor: pointer;
     transition: .3s ease-in-out;
-
-    &:hover {
-      background-color: white;
-      color: rgb(255, 62, 62);
-    }
   }
 
 }

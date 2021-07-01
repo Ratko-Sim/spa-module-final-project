@@ -37,7 +37,7 @@
   margin: 2rem 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   justify-content: flex-end;
   min-width: 23rem;
   transition: 2s;
@@ -57,10 +57,9 @@
 
     .Team-underline {
       width: 80%;
-      height: .2rem;
-      background: #C6FFDD; 
-      background: -webkit-linear-gradient(to right,rgb(197,0,23), rgb(249,160,15),rgb(0, 133,243)); 
-      background: linear-gradient(to right, rgb(197,0,23), rgb(249,160,15),rgb(0, 133,243));
+      height: .1rem;
+      background: #dfdfdf; 
+
     }
 
     span {
