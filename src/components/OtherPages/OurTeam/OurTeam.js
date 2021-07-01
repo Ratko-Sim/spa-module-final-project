@@ -1,11 +1,14 @@
-import React from 'react'
-import OurTeamCard from "./OurTeamCard"
-import "./OurTeam.scss"
-import { motion } from "framer-motion"
+import React, {useEffect} from 'react';
+import OurTeamCard from "./OurTeamCard";
+import "./OurTeam.scss";
+import { motion } from "framer-motion";
 
 
 function OurTeam() {
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <motion.div className="OurTeam"

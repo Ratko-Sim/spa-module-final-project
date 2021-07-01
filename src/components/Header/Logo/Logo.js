@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import "./Logo.scss"
-import arheraIcon from "./arhera-icon.png"
-import shoppingCart from "./shopping-cart.png"
+import arheraIcon from "./logo-arhera.jpg"
 import searchIcon from "./search-icon.png"
 import { useSelector } from 'react-redux';
 import { RiShoppingBag3Line } from "react-icons/ri"
@@ -20,11 +19,7 @@ function Logo() {
         </a>
       </div>
       <div className="Top-right-wrapper">
-        <div className="Login">
-          <span className="Login-item"><a href="/">wishlist</a></span>
-          <span className="Login-item"><a href="/">my cart</a></span>
-          <span className="Login-item"><a href="/">login</a></span>
-        </div>
+        
         <div className="Search-cart-wrapper">
           <div className="Search-bar">
             <input type="search" placeholder="Search..." />

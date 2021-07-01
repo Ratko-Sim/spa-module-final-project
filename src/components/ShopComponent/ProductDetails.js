@@ -30,6 +30,7 @@ export const ProductDetails = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     if (productId && productId !== "") fetchProductDetails();
     return () => {
       dispatch(removeSelectedProducts());

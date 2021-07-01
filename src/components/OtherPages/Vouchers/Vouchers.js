@@ -1,9 +1,14 @@
-import React from 'react'
-import CustomerServiceComp from "../CustomerServiceComp"
-import "./Vouchers.scss"
-import { motion } from "framer-motion"
+import React, {useEffect} from 'react';
+import CustomerServiceComp from "../CustomerServiceComp";
+import "./Vouchers.scss";
+import { motion } from "framer-motion";
 
 function Vouchers() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <motion.div className="Vouchers"
       exit={{ opacity: 0 }}
