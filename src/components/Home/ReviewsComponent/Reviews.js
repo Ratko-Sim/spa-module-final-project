@@ -25,7 +25,7 @@ const Reviews = () => {
   return (
 
     <div className="reviews-section">
-      <h1>Customer Reviews</h1>
+      <h3>Customer Reviews</h3>
       <div className="reviews-section__row">
         <ReviewCard />
       </div>
