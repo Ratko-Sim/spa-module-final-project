@@ -6,11 +6,11 @@ import "./ProductComponent.scss";
 
 
 export const ProductComponent = () => {
-  // const products = useSelector((state) => state.allProducts.products)
-  const products = useSelector((state) => state.allProducts.filteredItems)
+
+  const filterProducts = useSelector((state) => state.allProducts.filteredItems)
 
 
-  const renderList = products.map((products) => {
+  const renderList = filterProducts.map((products) => {
 
     const { id, title, image, price } = products;
     return (
