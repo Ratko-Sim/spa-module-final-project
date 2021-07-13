@@ -5,12 +5,6 @@ import { setProducts } from "../../../Redux/actions/productActions";
 import { TrendingProductComponent } from "./TrendingProductComponent";
 import "./Trending.scss";
 
-//// All this is for Swiper ////
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/swiper.min.css";
-// import "swiper/components/scrollbar/scrollbar.min.css";
-// import SwiperCore, { Scrollbar, Mousewheel } from "swiper/core";
-// SwiperCore.use([Scrollbar, Mousewheel]);
 
 const Trending = () => {
   const dispatch = useDispatch();
@@ -33,6 +27,7 @@ const Trending = () => {
   return (
     <div className="trending-section">
       <h3>Trending Products</h3>
+      <p>Browse a list of our most popular and trending products in 2021</p>
       <div className="trending-section-wrapper">
         {products.map((product, i) => (
             <TrendingProductComponent

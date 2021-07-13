@@ -26,6 +26,7 @@ const Reviews = () => {
 
     <div className="reviews-section">
       <h3>Customer Reviews</h3>
+      <p>What our customers say about our products</p>
       <div className="reviews-section__row">
         <ReviewCard />
       </div>

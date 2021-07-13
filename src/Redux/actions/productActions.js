@@ -1,5 +1,4 @@
 import { ActionTypes } from "../action-types/actionTypes";
-import { useSelector } from 'react-redux'
 
 export const setProducts = (products) => {
   return {
