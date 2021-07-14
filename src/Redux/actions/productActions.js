@@ -22,15 +22,18 @@ export const removeSelectedProducts = () => {
 
 
 
-export const filterProducts = (products, category) => (dispatch) => {
-  return dispatch({
+
+
+export const filterProducts = (products, category) => {
+  console.log("filter test")
+  return {
     type: ActionTypes.FILTER_PRODUCT_BY_CATEGORY,
-    payload: {
-      category: category,
-      items: category === 'ALL' ? products : products.filter(a => a.category)
-    }
-  })
-}
+    payload: { products: category === 'ALL' ? products : products.filter(prod => prod.category === category), category: category }
+  };
+};
+
+
+
 
 
 

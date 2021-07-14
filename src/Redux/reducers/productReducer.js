@@ -6,16 +6,23 @@ const intialState = {
   category: '',
 };
 
+
+
 export const productReducer = (state = intialState, { type, payload }) => {
   switch (type) {
     case ActionTypes.SET_PRODUCTS:
       return { ...state, products: payload, filteredItems: payload };
     case ActionTypes.FILTER_PRODUCT_BY_CATEGORY:
-      return { ...state, filteredItems: payload.items, category: payload.category }
+      return { ...state, filteredItems: payload.products, category: payload.category }
     default:
       return state;
   }
 };
+
+
+
+
+
 
 export const selectedProductReducer = (state = {}, { type, payload }) => {
   switch (type) {

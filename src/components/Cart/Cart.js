@@ -15,8 +15,7 @@ export const Cart = () => {
   const qty = location.search ? Number(location.search.split('=')[1]) : 1;
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
-  console.log("This is the cart", cart)
-  console.log("This is the cartItems", cartItems)
+
   const dispatch = useDispatch();
   let history = useHistory();
 
